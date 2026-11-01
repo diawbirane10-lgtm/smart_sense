@@ -1,0 +1,10 @@
+id,objectif,critere,echeance,etat
+F-01,Detection passage opaque,≥99% sur 1000 passages (cible),V1,Non testé
+F-02,Fausses detections,≤1 /1000 cycles de référence (cible),V1,Non testé
+F-03,Distance US,0.20–1m ±30mm (cible),V1,Non testé
+F-04,Temps photo,≤20ms (cible),V1,Non testé
+F-05,Rejet lumière,3 niveaux essais,V1,Non testé
+F-06,Acquisitions séparées,"ADC_PHOTO, ADC_US",V0,Défini dans netlist
+E-01,Entrée 24V,DC-DC + protections qualifiés,V2,A définir
+E-02,Rail 3.3V et VREF,Mesurer VREF et ripple,V1,Schéma proposé
+S-01,Sécurité industrielle,Zéro déclaration de conformité sans essai,Toute phase,Documenté

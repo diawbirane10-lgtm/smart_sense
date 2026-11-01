@@ -1,0 +1,81 @@
+{
+    "$schema": "https://schemas.kicad.org/erc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-11-01T12:49:01",
+    "ignored_checks": [
+        {
+            "description": "Global label only appears once in the schematic",
+            "key": "single_global_label"
+        },
+        {
+            "description": "Four connection points are joined together",
+            "key": "four_way_junction"
+        },
+        {
+            "description": "SPICE model issue",
+            "key": "simulation_model_issue"
+        },
+        {
+            "description": "Assigned footprint doesn't match footprint filters",
+            "key": "footprint_filter"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.5",
+    "sheets": [
+        {
+            "path": "/",
+            "uuid_path": "/f046974f-6c73-415c-80dc-7ae45ba6aaf8",
+            "violations": []
+        },
+        {
+            "path": "/Alimentation/",
+            "uuid_path": "/f046974f-6c73-415c-80dc-7ae45ba6aaf8/2e779aab-297d-4ec4-ad94-fae88f0611b6",
+            "violations": []
+        },
+        {
+            "path": "/Regulation 3,3 V et reference analogique 1,65 V/",
+            "uuid_path": "/f046974f-6c73-415c-80dc-7ae45ba6aaf8/6da2c276-3f94-4ccc-93d0-c950c9304a75",
+            "violations": []
+        },
+        {
+            "path": "/Emission infrarouge modulee a 10 kHz/",
+            "uuid_path": "/f046974f-6c73-415c-80dc-7ae45ba6aaf8/b1feca9a-7db5-4427-941e-984f2dd03881",
+            "violations": []
+        },
+        {
+            "path": "/Reception infrarouge/",
+            "uuid_path": "/f046974f-6c73-415c-80dc-7ae45ba6aaf8/b2fa59f8-5a33-4341-b09d-83e473127667",
+            "violations": []
+        },
+        {
+            "path": "/Filtrage photoelectrique et sortie ADC/",
+            "uuid_path": "/f046974f-6c73-415c-80dc-7ae45ba6aaf8/5bf66898-58b4-4739-b965-9794604280fb",
+            "violations": []
+        },
+        {
+            "path": "/Emission ultrasonore/",
+            "uuid_path": "/f046974f-6c73-415c-80dc-7ae45ba6aaf8/cf4f1f56-df13-44d0-aea1-9ad100537262",
+            "violations": []
+        },
+        {
+            "path": "/Reception ultrasonore/",
+            "uuid_path": "/f046974f-6c73-415c-80dc-7ae45ba6aaf8/fac3ebac-5c64-4758-b499-87a40ffb7407",
+            "violations": []
+        },
+        {
+            "path": "/Bande ultrasonore et deuxieme gain/",
+            "uuid_path": "/f046974f-6c73-415c-80dc-7ae45ba6aaf8/34724772-c163-4edd-9794-37a20622d67a",
+            "violations": []
+        },
+        {
+            "path": "/Interface acquisition MCU et temperature/",
+            "uuid_path": "/f046974f-6c73-415c-80dc-7ae45ba6aaf8/3c535ccb-4192-4bd5-ad85-955f0db9cf38",
+            "violations": []
+        }
+    ],
+    "source": "Smart_Sense.kicad_sch"
+}

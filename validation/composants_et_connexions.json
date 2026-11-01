@@ -1,0 +1,514 @@
+[
+  {
+    "reference": "J1",
+    "source": "J_POWER",
+    "value": "2P 24V INPUT",
+    "sheet": "01_Alimentation",
+    "pins": {
+      "1": "24V_IN",
+      "2": "GND"
+    }
+  },
+  {
+    "reference": "F1",
+    "source": "F1",
+    "value": "FUSE PTC TBD",
+    "sheet": "01_Alimentation",
+    "pins": {
+      "1": "24V_IN",
+      "2": "VIN_PROTECTED"
+    }
+  },
+  {
+    "reference": "D1",
+    "source": "D_TVS",
+    "value": "TVS TBD",
+    "sheet": "01_Alimentation",
+    "pins": {
+      "1": "VIN_PROTECTED",
+      "2": "GND"
+    }
+  },
+  {
+    "reference": "U1",
+    "source": "U_PWR",
+    "value": "DC/DC 24V-5V A DEFINIR",
+    "sheet": "01_Alimentation",
+    "pins": {
+      "1": "VIN_PROTECTED",
+      "2": "+5V",
+      "3": "GND"
+    }
+  },
+  {
+    "reference": "C1",
+    "source": "C_IN",
+    "value": "10uF 63V TBD",
+    "sheet": "01_Alimentation",
+    "pins": {
+      "1": "VIN_PROTECTED",
+      "2": "GND"
+    }
+  },
+  {
+    "reference": "C2",
+    "source": "C_5V",
+    "value": "22uF TBD",
+    "sheet": "01_Alimentation",
+    "pins": {
+      "1": "+5V",
+      "2": "GND"
+    }
+  },
+  {
+    "reference": "U2",
+    "source": "U_LDO",
+    "value": "LDO 5V-3V3 A DEFINIR",
+    "sheet": "02_Reference",
+    "pins": {
+      "1": "+5V",
+      "2": "+3V3",
+      "3": "GND"
+    }
+  },
+  {
+    "reference": "C3",
+    "source": "C_3V3",
+    "value": "1uF TBD",
+    "sheet": "02_Reference",
+    "pins": {
+      "1": "+3V3",
+      "2": "GND"
+    }
+  },
+  {
+    "reference": "R1",
+    "source": "R_REF1",
+    "value": "10K",
+    "sheet": "02_Reference",
+    "pins": {
+      "1": "+3V3",
+      "2": "VREF_RAW"
+    }
+  },
+  {
+    "reference": "R2",
+    "source": "R_REF2",
+    "value": "10K",
+    "sheet": "02_Reference",
+    "pins": {
+      "1": "VREF_RAW",
+      "2": "GND"
+    }
+  },
+  {
+    "reference": "U3",
+    "source": "U_REF",
+    "value": "OPA320",
+    "sheet": "02_Reference",
+    "pins": {
+      "3": "VREF_RAW",
+      "4": "VREF_1V65",
+      "1": "VREF_1V65",
+      "5": "+3V3",
+      "2": "GND"
+    }
+  },
+  {
+    "reference": "C4",
+    "source": "C_REF_DEC",
+    "value": "100nF",
+    "sheet": "02_Reference",
+    "pins": {
+      "1": "+3V3",
+      "2": "GND"
+    }
+  },
+  {
+    "reference": "R3",
+    "source": "R_GATE",
+    "value": "100R",
+    "sheet": "03_IR_Emission",
+    "pins": {
+      "1": "IR_PWM",
+      "2": "IR_GATE"
+    }
+  },
+  {
+    "reference": "R4",
+    "source": "R_GPD",
+    "value": "100K",
+    "sheet": "03_IR_Emission",
+    "pins": {
+      "1": "IR_GATE",
+      "2": "GND"
+    }
+  },
+  {
+    "reference": "Q1",
+    "source": "Q_LED",
+    "value": "NMOS 2N7002 TBD",
+    "sheet": "03_IR_Emission",
+    "pins": {
+      "1": "IR_GATE",
+      "3": "IR_LED_K",
+      "2": "GND"
+    }
+  },
+  {
+    "reference": "R5",
+    "source": "R_LED",
+    "value": "180R",
+    "sheet": "03_IR_Emission",
+    "pins": {
+      "1": "+5V",
+      "2": "IR_LED_A"
+    }
+  },
+  {
+    "reference": "D2",
+    "source": "D_LED",
+    "value": "TSAL6200",
+    "sheet": "03_IR_Emission",
+    "pins": {
+      "2": "IR_LED_A",
+      "1": "IR_LED_K"
+    }
+  },
+  {
+    "reference": "D3",
+    "source": "D_PD",
+    "value": "BPW34",
+    "sheet": "04_IR_TIA",
+    "pins": {
+      "1": "+3V3",
+      "2": "PD_ANODE"
+    }
+  },
+  {
+    "reference": "U4",
+    "source": "U_TIA",
+    "value": "OPA320",
+    "sheet": "04_IR_TIA",
+    "pins": {
+      "3": "VREF_1V65",
+      "4": "PD_ANODE",
+      "1": "V_TIA",
+      "5": "+3V3",
+      "2": "GND"
+    }
+  },
+  {
+    "reference": "R6",
+    "source": "R_TIA",
+    "value": "100K",
+    "sheet": "04_IR_TIA",
+    "pins": {
+      "1": "PD_ANODE",
+      "2": "V_TIA"
+    }
+  },
+  {
+    "reference": "C5",
+    "source": "C_TIA",
+    "value": "10pF VERIFY",
+    "sheet": "04_IR_TIA",
+    "pins": {
+      "1": "PD_ANODE",
+      "2": "V_TIA"
+    }
+  },
+  {
+    "reference": "C6",
+    "source": "C_TIA_DEC",
+    "value": "100nF",
+    "sheet": "04_IR_TIA",
+    "pins": {
+      "1": "+3V3",
+      "2": "GND"
+    }
+  },
+  {
+    "reference": "C7",
+    "source": "C_PH_HP",
+    "value": "10nF",
+    "sheet": "05_IR_Filtre",
+    "pins": {
+      "1": "V_TIA",
+      "2": "PHOTO_HP"
+    }
+  },
+  {
+    "reference": "R7",
+    "source": "R_PH_HP",
+    "value": "10K",
+    "sheet": "05_IR_Filtre",
+    "pins": {
+      "1": "PHOTO_HP",
+      "2": "VREF_1V65"
+    }
+  },
+  {
+    "reference": "R8",
+    "source": "R_PH_LP",
+    "value": "1K",
+    "sheet": "05_IR_Filtre",
+    "pins": {
+      "1": "PHOTO_HP",
+      "2": "ADC_PHOTO"
+    }
+  },
+  {
+    "reference": "C8",
+    "source": "C_PH_LP",
+    "value": "6.8nF",
+    "sheet": "05_IR_Filtre",
+    "pins": {
+      "1": "ADC_PHOTO",
+      "2": "VREF_1V65"
+    }
+  },
+  {
+    "reference": "U5",
+    "source": "U_HB",
+    "value": "DRV8837",
+    "sheet": "06_US_Emission",
+    "pins": {
+      "1": "+5V",
+      "8": "+3V3",
+      "4": "GND",
+      "6": "US_IN1",
+      "5": "US_IN2",
+      "7": "US_SLEEP",
+      "2": "US_DRV_A",
+      "3": "US_DRV_B",
+      "9": "GND"
+    }
+  },
+  {
+    "reference": "J2",
+    "source": "J_US_TX",
+    "value": "MA40S4S TX",
+    "sheet": "06_US_Emission",
+    "pins": {
+      "1": "US_DRV_A",
+      "2": "US_DRV_B"
+    }
+  },
+  {
+    "reference": "C9",
+    "source": "C_HB_5V",
+    "value": "100nF",
+    "sheet": "06_US_Emission",
+    "pins": {
+      "1": "+5V",
+      "2": "GND"
+    }
+  },
+  {
+    "reference": "C10",
+    "source": "C_HB_3V3",
+    "value": "100nF",
+    "sheet": "06_US_Emission",
+    "pins": {
+      "1": "+3V3",
+      "2": "GND"
+    }
+  },
+  {
+    "reference": "J3",
+    "source": "J_US_RX",
+    "value": "MA40S4R RX",
+    "sheet": "07_US_Reception",
+    "pins": {
+      "1": "US_RX_RAW",
+      "2": "GND"
+    }
+  },
+  {
+    "reference": "C11",
+    "source": "C_RX",
+    "value": "1nF",
+    "sheet": "07_US_Reception",
+    "pins": {
+      "1": "US_RX_RAW",
+      "2": "US_RX_BIAS"
+    }
+  },
+  {
+    "reference": "R9",
+    "source": "R_RX_BIAS",
+    "value": "1M",
+    "sheet": "07_US_Reception",
+    "pins": {
+      "1": "US_RX_BIAS",
+      "2": "VREF_1V65"
+    }
+  },
+  {
+    "reference": "U6",
+    "source": "U_US1",
+    "value": "OPA320",
+    "sheet": "07_US_Reception",
+    "pins": {
+      "3": "US_RX_BIAS",
+      "4": "US_INV1",
+      "1": "US_AMP1",
+      "5": "+3V3",
+      "2": "GND"
+    }
+  },
+  {
+    "reference": "R10",
+    "source": "R_G1",
+    "value": "10K",
+    "sheet": "07_US_Reception",
+    "pins": {
+      "1": "US_INV1",
+      "2": "VREF_1V65"
+    }
+  },
+  {
+    "reference": "R11",
+    "source": "R_F1",
+    "value": "100K",
+    "sheet": "07_US_Reception",
+    "pins": {
+      "1": "US_INV1",
+      "2": "US_AMP1"
+    }
+  },
+  {
+    "reference": "C12",
+    "source": "C_US1_DEC",
+    "value": "100nF",
+    "sheet": "07_US_Reception",
+    "pins": {
+      "1": "+3V3",
+      "2": "GND"
+    }
+  },
+  {
+    "reference": "C13",
+    "source": "C_US_HP",
+    "value": "1nF",
+    "sheet": "08_US_Filtre",
+    "pins": {
+      "1": "US_AMP1",
+      "2": "US_HP"
+    }
+  },
+  {
+    "reference": "R12",
+    "source": "R_US_HP",
+    "value": "6.8K",
+    "sheet": "08_US_Filtre",
+    "pins": {
+      "1": "US_HP",
+      "2": "VREF_1V65"
+    }
+  },
+  {
+    "reference": "R13",
+    "source": "R_US_LP",
+    "value": "2.2K",
+    "sheet": "08_US_Filtre",
+    "pins": {
+      "1": "US_HP",
+      "2": "US_LP"
+    }
+  },
+  {
+    "reference": "C14",
+    "source": "C_US_LP",
+    "value": "1nF",
+    "sheet": "08_US_Filtre",
+    "pins": {
+      "1": "US_LP",
+      "2": "VREF_1V65"
+    }
+  },
+  {
+    "reference": "U7",
+    "source": "U_US2",
+    "value": "OPA320",
+    "sheet": "08_US_Filtre",
+    "pins": {
+      "3": "US_LP",
+      "4": "US_INV2",
+      "1": "ADC_US",
+      "5": "+3V3",
+      "2": "GND"
+    }
+  },
+  {
+    "reference": "R14",
+    "source": "R_G2",
+    "value": "10K",
+    "sheet": "08_US_Filtre",
+    "pins": {
+      "1": "US_INV2",
+      "2": "VREF_1V65"
+    }
+  },
+  {
+    "reference": "R15",
+    "source": "R_F2",
+    "value": "100K",
+    "sheet": "08_US_Filtre",
+    "pins": {
+      "1": "US_INV2",
+      "2": "ADC_US"
+    }
+  },
+  {
+    "reference": "C15",
+    "source": "C_US2_DEC",
+    "value": "100nF",
+    "sheet": "08_US_Filtre",
+    "pins": {
+      "1": "+3V3",
+      "2": "GND"
+    }
+  },
+  {
+    "reference": "J4",
+    "source": "J_MCU",
+    "value": "MCU - INTERFACE DEDIEE",
+    "sheet": "09_Interface",
+    "pins": {
+      "1": "+3V3",
+      "2": "GND",
+      "3": "IR_PWM",
+      "4": "US_IN1",
+      "5": "US_IN2",
+      "6": "US_SLEEP",
+      "7": "ADC_PHOTO",
+      "8": "ADC_US",
+      "9": "ADC_TEMP",
+      "10": "VREF_1V65",
+      "11": "+5V",
+      "12": "SPARE"
+    }
+  },
+  {
+    "reference": "R16",
+    "source": "R_NTC_PULL",
+    "value": "10K",
+    "sheet": "09_Interface",
+    "pins": {
+      "1": "+3V3",
+      "2": "ADC_TEMP"
+    }
+  },
+  {
+    "reference": "J5",
+    "source": "J_NTC",
+    "value": "NTC 10K EXTERNAL",
+    "sheet": "09_Interface",
+    "pins": {
+      "1": "ADC_TEMP",
+      "2": "GND"
+    }
+  }
+]

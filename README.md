@@ -1,4 +1,19 @@
-# SmartSense — schémas électroniques
+# SmartSense V1 — schémas et PCB
+
+Projet personnel d’application du module **Smart Capteurs & Actionneurs** : barrière IR modulée et acquisition ultrasonore.
+
+- [Projet KiCad 10 V1](hardware/V1/SmartSense_V1.kicad_pro)
+- [Schémas en couleurs agrandis](docs/V1/Schemas_SmartSense_V1.pdf)
+- [Dossier d’ingénierie](docs/V1/Dossier_ingenierie_SmartSense_V1.pdf)
+- [Couches PCB et assemblage](docs/V1/PCB_Couches_et_Assemblage_V1.pdf)
+- [Instructions et limites V1](docs/V1/README.md)
+- [Fichiers de fabrication](fabrication/V1)
+
+PCB quatre couches 114 × 90 mm ; contrôles natifs ERC/DRC sans violation signalée et aucune liaison ouverte. Prototype vérifié en CAO : firmware, calibration, essais physiques et qualification CEM restent à effectuer. Les normes citées servent de cadre de conception ; aucune certification n’est revendiquée.
+
+## Historique — dossier initial V0.3
+
+### Schémas initiaux
 
 Projet académique du module **Smart Capteurs & Actionneurs** : barrière infrarouge modulée et acquisition ultrasonore pour un convoyeur de blocs en béton.
 

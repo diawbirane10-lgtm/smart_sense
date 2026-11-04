@@ -1,0 +1,61 @@
+{
+  "revision": "V1 RevA",
+  "purpose": "Prototype didactique de detection IR et mesure US, inspire des pratiques industrielles",
+  "sector": "instrumentation et controle, evaluation academique",
+  "markets": [
+    "Maroc: prototype de laboratoire",
+    "UE: exigences CEM a evaluer avant mise sur marche, aucune certification revendiquee"
+  ],
+  "supply": {
+    "nominal_V": 24,
+    "continuous_range_V": [
+      18,
+      30
+    ],
+    "source": "Alimentation SELV externe isolee et limitee en courant",
+    "galvanic_isolation_on_board": false
+  },
+  "environment": {
+    "temperature_C": [
+      0,
+      50
+    ],
+    "condensation": false,
+    "location": "interieur sous boitier, environnement controle",
+    "open_ultrasonic_transducers": "Murata MA40S4S/R: interieur uniquement; non adaptes tels quels a la poussiere ou aux projections"
+  },
+  "pcb": {
+    "dimensions_mm": [
+      114,
+      90
+    ],
+    "layers": 4,
+    "thickness_mm": 1.6,
+    "outer_copper_um": 35,
+    "inner_copper_um": 18,
+    "stackup": [
+      "F.Cu signal et composants",
+      "In1.Cu GND continu",
+      "In2.Cu GND continu",
+      "B.Cu signal"
+    ],
+    "controlled_impedance": false,
+    "target_assembly_class": 2,
+    "manufacturer_reference": "JLCPCB capacites standard, validation devis/stackup necessaire",
+    "signal_track_mm": 0.2,
+    "analog_track_mm": 0.25,
+    "power_track_mm": 0.35,
+    "input24V_track_mm": 0.75,
+    "clearance_default_mm": 0.2,
+    "clearance_input24V_mm": 0.5,
+    "via_diameter_mm": 0.6,
+    "via_drill_mm": 0.3,
+    "copper_to_edge_mm": 0.5,
+    "power_3V3_track_mm": 0.25,
+    "outer_ground_pours": true,
+    "critical_decoupler_ground_connection_target_mm": 5,
+    "ground_probe_holes_added": 19
+  },
+  "standards_status": "References de conception et plan de qualification; textes complets non audites, pas de declaration de conformite",
+  "firmware_status": "Contrat de broches et acquisition definis; firmware et mesures physiques non realises"
+}

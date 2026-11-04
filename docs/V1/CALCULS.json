@@ -1,0 +1,26 @@
+{
+  "models": "Linear small-signal ideal-opamp filters; TIA single-pole GBW20MHz, Cin120pF; no measured or vendor macromodel claims",
+  "photo_transimpedance_10kHz_ohm": 43767.57567565627,
+  "photo_alias_250kHz_relative_10kHz_dB": -67.88459879865385,
+  "us_gain_40kHz": 14.07976889746481,
+  "us_alias_250kHz_relative_40kHz_dB": -43.38493577461084,
+  "tia_ideal_dc_photocurrent_headroom_uA": 150.0,
+  "adc_lsb_uV": 805.6640625,
+  "clock_distance_error_at_1m_mm": 0.02,
+  "ultrasound_cycle_us": 25,
+  "burst8_us": 200,
+  "photo_tia_Rf_ohm": 10000,
+  "photo_tia_Cf_pF": 100,
+  "US_gain_product_before_filters": 47.3,
+  "input_worst_A_assume_0_9W_at18V_80pct": 0.0625,
+  "tia_single_pole_model_phase_margin_deg": 89.4532316257013,
+  "tia_loop_unity_frequency_Hz": 9093356.184486387,
+  "photo_SK_tolerance_1000_samples_min_max": [
+    0.8763286770586667,
+    0.8925261260927652
+  ],
+  "us_SK_tolerance_1000_samples_min_max": [
+    0.774963568448478,
+    0.8144486443135106
+  ]
+}

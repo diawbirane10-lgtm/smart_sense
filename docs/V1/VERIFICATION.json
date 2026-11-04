@@ -1,0 +1,215 @@
+{
+  "engine": "KiCad 10.0.5 native connectivity and pad/track geometry",
+  "footprints": 138,
+  "copper_layers": 4,
+  "tracks": 803,
+  "vias": 54,
+  "nets": 85,
+  "checked_pin_net_assignments": 302,
+  "pin_net_mismatches": [],
+  "unconnected": 0,
+  "courtyard_overlaps": [],
+  "via_centres_inside_smd_pads": [],
+  "critical_track_lengths_mm": {
+    "PD_SUM": 24.596,
+    "V_TIA": 20.825,
+    "HSE_OSC": 2.962,
+    "HSE_IN": 7.852,
+    "ADC_PHOTO": 68.839,
+    "ADC_US": 37.597,
+    "US_TX_A": 5.952,
+    "US_TX_B": 5.728
+  },
+  "critical_layers": {
+    "PD_SUM": [
+      "F.Cu"
+    ],
+    "V_TIA": [
+      "F.Cu"
+    ],
+    "HSE_OSC": [
+      "F.Cu"
+    ],
+    "HSE_IN": [
+      "F.Cu"
+    ]
+  },
+  "ground_connection_proximity": [
+    {
+      "reference": "C1",
+      "key": "C_IN",
+      "nearest_ground_interlayer_connection_mm": 5.023
+    },
+    {
+      "reference": "C2",
+      "key": "C_INHF",
+      "nearest_ground_interlayer_connection_mm": 2.05
+    },
+    {
+      "reference": "C3",
+      "key": "C_BUCK",
+      "nearest_ground_interlayer_connection_mm": 2.55
+    },
+    {
+      "reference": "C4",
+      "key": "C_LDI",
+      "nearest_ground_interlayer_connection_mm": 2.583
+    },
+    {
+      "reference": "C5",
+      "key": "C_LDO",
+      "nearest_ground_interlayer_connection_mm": 2.05
+    },
+    {
+      "reference": "C6",
+      "key": "C_LAI",
+      "nearest_ground_interlayer_connection_mm": 3.648
+    },
+    {
+      "reference": "C7",
+      "key": "C_LAO",
+      "nearest_ground_interlayer_connection_mm": 2.401
+    },
+    {
+      "reference": "C8",
+      "key": "C_VR",
+      "nearest_ground_interlayer_connection_mm": 7.5
+    },
+    {
+      "reference": "C9",
+      "key": "C_VR_LOAD",
+      "nearest_ground_interlayer_connection_mm": 2.05
+    },
+    {
+      "reference": "C10",
+      "key": "C_VR_DEC",
+      "nearest_ground_interlayer_connection_mm": 2.05
+    },
+    {
+      "reference": "C12",
+      "key": "C_TIA_DEC",
+      "nearest_ground_interlayer_connection_mm": 2.11
+    },
+    {
+      "reference": "C14",
+      "key": "C_PH_LP",
+      "nearest_ground_interlayer_connection_mm": 4.945
+    },
+    {
+      "reference": "C15",
+      "key": "C_PH_GAIN_DEC",
+      "nearest_ground_interlayer_connection_mm": 2.05
+    },
+    {
+      "reference": "C17",
+      "key": "C_PHAA2",
+      "nearest_ground_interlayer_connection_mm": 6.372
+    },
+    {
+      "reference": "C18",
+      "key": "C_PHAADEC",
+      "nearest_ground_interlayer_connection_mm": 2.11
+    },
+    {
+      "reference": "C19",
+      "key": "C_PH_ADC",
+      "nearest_ground_interlayer_connection_mm": 7.772
+    },
+    {
+      "reference": "C20",
+      "key": "C_DRV_VM",
+      "nearest_ground_interlayer_connection_mm": 2.55
+    },
+    {
+      "reference": "C21",
+      "key": "C_DRV_VC",
+      "nearest_ground_interlayer_connection_mm": 4.0
+    },
+    {
+      "reference": "C22",
+      "key": "C_DRV_BULK",
+      "nearest_ground_interlayer_connection_mm": 4.075
+    },
+    {
+      "reference": "C24",
+      "key": "C_US1_DEC",
+      "nearest_ground_interlayer_connection_mm": 2.55
+    },
+    {
+      "reference": "C26",
+      "key": "C_US_LP",
+      "nearest_ground_interlayer_connection_mm": 6.786
+    },
+    {
+      "reference": "C27",
+      "key": "C_US2_DEC",
+      "nearest_ground_interlayer_connection_mm": 3.627
+    },
+    {
+      "reference": "C29",
+      "key": "C_USAA2",
+      "nearest_ground_interlayer_connection_mm": 4.111
+    },
+    {
+      "reference": "C30",
+      "key": "C_USAADEC",
+      "nearest_ground_interlayer_connection_mm": 2.05
+    },
+    {
+      "reference": "C31",
+      "key": "C_US_ADC",
+      "nearest_ground_interlayer_connection_mm": 1.348
+    },
+    {
+      "reference": "C32",
+      "key": "C_RESET",
+      "nearest_ground_interlayer_connection_mm": 6.322
+    },
+    {
+      "reference": "C33",
+      "key": "C_VDD1",
+      "nearest_ground_interlayer_connection_mm": 4.929
+    },
+    {
+      "reference": "C34",
+      "key": "C_VDD2",
+      "nearest_ground_interlayer_connection_mm": 4.299
+    },
+    {
+      "reference": "C35",
+      "key": "C_VDD3",
+      "nearest_ground_interlayer_connection_mm": 2.596
+    },
+    {
+      "reference": "C36",
+      "key": "C_VBAT",
+      "nearest_ground_interlayer_connection_mm": 2.56
+    },
+    {
+      "reference": "C37",
+      "key": "C_DIG_BULK",
+      "nearest_ground_interlayer_connection_mm": 2.864
+    },
+    {
+      "reference": "C38",
+      "key": "C_VDDA",
+      "nearest_ground_interlayer_connection_mm": 2.852
+    },
+    {
+      "reference": "C39",
+      "key": "C_VREF",
+      "nearest_ground_interlayer_connection_mm": 2.114
+    },
+    {
+      "reference": "C40",
+      "key": "C_CLOCK",
+      "nearest_ground_interlayer_connection_mm": 2.053
+    },
+    {
+      "reference": "C41",
+      "key": "C_TEMP_ADC",
+      "nearest_ground_interlayer_connection_mm": 1.01
+    }
+  ],
+  "ground_proximity_is_heuristic": "Euclidean distance only, not extracted loop inductance. Inner planes and actual routing also determine return paths."
+}

@@ -1,0 +1,11 @@
+SMARTSENSE V1 RevA - PROTOTYPE POUR REVUE CAM
+4 couches, FR4 Tg150 cible, epaisseur nominale 1.6 mm, finition ENIG, masque vert, legende blanche.
+Cuivre exterieur 35 um, interieur 18 um. In1 et In2 = GND.
+Empilage cible : masque .01 / cuivre .035 / prepreg .20 / cuivre .018 / core 1.074 / cuivre .018 / prepreg .20 / cuivre .035 / masque .01 mm.
+Le fabricant doit confirmer l'empilage standard disponible et ses tolerances ; epsilon_r4.5 et tan(delta).02 sont des hypotheses FR4, pas des caracteristiques certifiees d'un stratifie achete. Aucune impedance controlee exigee.
+Pistes min .20 mm ; jeu min .20 mm ; classe entree24V .50 mm. Pistes alimentation3V3 .25 mm,5V .35 mm,24V .75 mm.
+Vias traversants diametre .60 mm / trou .30 mm, tentes des deux cotes. Pas de via-in-pad detecte.
+Trous de points de masse de test : .50 mm metallises, intentionnels. Quatre trous M3 de3.2mm non metallises.
+Percages PTH et NPTH separes. Fichiers Gerber X2 et Excellon en mm. Origine CAD commune aux exports, non recalee au coin de la carte.
+BOM technique et centroides joints : les passifs sont definis par valeur,tolerance,boitier et tension ; valider leurs MPN d'achat et la capacitance effective avant approvisionnement. Points de test et trous de fixation = caracteristiques PCB, pas composants CMS a acheter.
+Ce jeu de fichiers est un export de prototype. Il ne constitue pas une qualification CEM, de precision, de securite ou de conformite industrielle. Faire une revue CAM et les essais definis au dossier avant toute mise en service.

@@ -1,7 +1,0 @@
-﻿Reference fabricant,Quantite,Usage,Note
-Vishay TSAL6200,1,Emetteur IR distant,Polarite et alignement optique a verifier
-Murata MA40S4S,1,Emission ultrasonore,Transducteur ouvert usage interieur
-Murata MA40S4R,1,Reception ultrasonore,Transducteur ouvert usage interieur
-Semitec 103AT-2,1,NTC distante,10 kohm B3435
-Alimentation SELV 24 V,1,Alimentation externe,Choisir une alimentation certifiee adaptee
-Faisceaux et connecteurs femelles,1,Liaisons internes courtes,Quantites selon montage mecanique

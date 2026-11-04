@@ -1,62 +1,18 @@
-# SmartSense V1 — schémas et PCB
+# SmartSense — schémas électroniques
 
-Projet personnel d’application du module **Smart Capteurs & Actionneurs** : barrière IR modulée et acquisition ultrasonore.
+Projet personnel d’application du module **Smart Capteurs & Actionneurs** : barrière infrarouge modulée et acquisition ultrasonore avec STM32G431.
 
-- [Projet KiCad 10 V1](hardware/V1/SmartSense_V1.kicad_pro)
-- [Dossier de conception](docs/V1/DOSSIER_CONCEPTION.md)
-- [Instructions et limites V1](docs/V1/README.md)
-- [Fichiers de fabrication](fabrication/V1)
+Ce dépôt contient uniquement les schémas KiCad et les bibliothèques de symboles nécessaires. Les PDF, le PCB et les fichiers de fabrication sont conservés localement pour le moment.
 
-PCB quatre couches 114 × 90 mm ; contrôles natifs ERC/DRC sans violation signalée et aucune liaison ouverte. Prototype vérifié en CAO : firmware, calibration, essais physiques et qualification CEM restent à effectuer. Les normes citées servent de cadre de conception ; aucune certification n’est revendiquée.
-
-## Historique — dossier initial V0.3
-
-### Schémas initiaux
-
-Projet académique du module **Smart Capteurs & Actionneurs** : barrière infrarouge modulée et acquisition ultrasonore pour un convoyeur de blocs en béton.
-
-## Dossier de revue V0.3
-
-- [Projet KiCad 10](hardware/Smart_Sense.kicad_pro)
-- [Rapport ERC](validation/ERC_KiCad10.json)
-- [Vérification des 127 raccordements](validation/connexions.json)
-
-Le projet comporte **10 feuilles hiérarchiques et 48 composants**. Aucun PCB n’est réalisé. Les schémas se connectent par noms de signaux : étiquettes globales entre feuilles, locales au sein d’une feuille. Les vues PDF fractionnées conservent les mêmes repères et connexions.
-
-## Ouvrir le projet
+## Ouvrir la version actuelle
 
 1. Installer KiCad 10 et ses bibliothèques standard.
-2. Télécharger le dépôt et ouvrir `hardware/Smart_Sense.kicad_pro`.
-3. Ouvrir le schéma et naviguer dans les sous-feuilles.
+2. Télécharger le dépôt complet.
+3. Ouvrir `hardware/V1/SmartSense_V1.kicad_pro`, puis le schéma principal `SmartSense_V1.kicad_sch`.
+4. Naviguer dans les sous-feuilles depuis la racine ou le navigateur hiérarchique.
 
-La bibliothèque locale et `sym-lib-table` accompagnent le projet. Libertinus Serif peut être installée pour retrouver la typographie dans KiCad ; les PDF sont conservés localement pour le moment.
+Les étiquettes portant le même nom désignent la même connexion électrique. La bibliothèque locale `SmartSenseV1.kicad_sym` et `sym-lib-table` accompagnent les feuilles.
 
-## Organisation des feuilles
+La version initiale V0.3 est conservée directement dans `hardware/`. La V1 actuelle est dans `hardware/V1/`.
 
-| Feuille | Fonction |
-| --- | --- |
-| Vue générale | Architecture et accès aux sous-feuilles |
-| 01 | Entrée 24 V conceptuelle et conversion 5 V |
-| 02 | Régulation 3,3 V et référence analogique 1,65 V |
-| 03 | Émission IR modulée à 10 kHz |
-| 04 | Photodiode et transimpédance |
-| 05 | Filtrage et sortie ADC photo |
-| 06 | Émission ultrasonore 40 kHz |
-| 07 | Réception ultrasonore et premier gain |
-| 08 | Filtrage US et deuxième gain |
-| 09 | Interface dédiée MCU et NTC |
-
-## État des vérifications
-
-KiCad 10.0.5 : **0 violation ERC**. La comparaison de la netlist exportée avec les connexions attendues porte sur **127 affectations broche/signal, sans écart**. Le brochage OPA320 DBV est défini dans la bibliothèque locale. Le symbole du connecteur MCU est espacé pour améliorer la lisibilité ; sa numérotation reste 1 à 12.
-
-Ces contrôles ne démontrent pas la stabilité analogique ni les performances réelles. L’entrée 24 V, la coordination fusible/TVS, la protection contre inversion, les références DC/DC et LDO, la saturation des récepteurs et l’adaptation ADC restent à valider. Les blocs d’alimentation ont des bornes logiques, pas un brochage fabricant. Le connecteur MCU n’est pas un connecteur Nucleo directement compatible. Aucune interface automate 24 V ou fonctionnalité IA validée n’est revendiquée.
-
-Les fichiers `data/` conservent les exigences et identifiants du dossier initial Fusion/EAGLE fourni pour cette reprise. Leurs broches logiques se distinguent des numéros physiques du projet KiCad ; la correspondance actuelle figure dans `validation/composants_et_connexions.json`.
-
-## Sources
-
-- Dossier SmartSense initial du 28 octobre 2026 fourni pour la reprise du projet.
-- [TI OPA320, SBOS513F](https://www.ti.com/lit/gpn/opa320).
-- [TI DRV8837, SLVSBA4F](https://www.ti.com/lit/ds/symlink/drv8837.pdf).
-- Bibliothèques standard KiCad installées et symboles locaux inclus.
+Il s’agit d’une conception de prototype. Les performances réelles, la stabilité analogique et la CEM nécessitent des essais sur matériel ; aucune certification industrielle n’est revendiquée.

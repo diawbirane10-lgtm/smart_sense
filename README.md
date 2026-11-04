@@ -3,9 +3,7 @@
 Projet personnel d’application du module **Smart Capteurs & Actionneurs** : barrière IR modulée et acquisition ultrasonore.
 
 - [Projet KiCad 10 V1](hardware/V1/SmartSense_V1.kicad_pro)
-- [Schémas en couleurs agrandis](docs/V1/Schemas_SmartSense_V1.pdf)
-- [Dossier d’ingénierie](docs/V1/Dossier_ingenierie_SmartSense_V1.pdf)
-- [Couches PCB et assemblage](docs/V1/PCB_Couches_et_Assemblage_V1.pdf)
+- [Dossier de conception](docs/V1/DOSSIER_CONCEPTION.md)
 - [Instructions et limites V1](docs/V1/README.md)
 - [Fichiers de fabrication](fabrication/V1)
 
@@ -19,7 +17,6 @@ Projet académique du module **Smart Capteurs & Actionneurs** : barrière infrar
 
 ## Dossier de revue V0.3
 
-- [PDF en couleurs, vues agrandies, Libertinus Serif — 22 pages](docs/SmartSense_Schemas_Revue_V0_3.pdf)
 - [Projet KiCad 10](hardware/Smart_Sense.kicad_pro)
 - [Rapport ERC](validation/ERC_KiCad10.json)
 - [Vérification des 127 raccordements](validation/connexions.json)
@@ -32,7 +29,7 @@ Le projet comporte **10 feuilles hiérarchiques et 48 composants**. Aucun PCB n�
 2. Télécharger le dépôt et ouvrir `hardware/Smart_Sense.kicad_pro`.
 3. Ouvrir le schéma et naviguer dans les sous-feuilles.
 
-La bibliothèque locale et `sym-lib-table` accompagnent le projet. Libertinus Serif peut être installée pour retrouver la typographie dans KiCad ; elle est incorporée au PDF.
+La bibliothèque locale et `sym-lib-table` accompagnent le projet. Libertinus Serif peut être installée pour retrouver la typographie dans KiCad ; les PDF sont conservés localement pour le moment.
 
 ## Organisation des feuilles
 

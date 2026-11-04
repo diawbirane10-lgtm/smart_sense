@@ -16,3 +16,5 @@ Les étiquettes portant le même nom désignent la même connexion électrique. 
 Le dépôt contient une seule version active dans `hardware/V1/`. Les anciennes versions restent accessibles dans l’historique Git.
 
 Il s’agit d’une conception de prototype. Les performances réelles, la stabilité analogique et la CEM nécessitent des essais sur matériel ; aucune certification industrielle n’est revendiquée.
+
+Les références fabricant des 103 composants à monter sont précisées dans les propriétés des symboles. Le connecteur SWD est fixé au Harwin M50-3500542. Vérification ERC de cette révision : zéro violation. Le dossier de fabrication reste local.

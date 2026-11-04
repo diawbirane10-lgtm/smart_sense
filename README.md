@@ -13,6 +13,6 @@ Ce dépôt contient uniquement les schémas KiCad et les bibliothèques de symbo
 
 Les étiquettes portant le même nom désignent la même connexion électrique. La bibliothèque locale `SmartSenseV1.kicad_sym` et `sym-lib-table` accompagnent les feuilles.
 
-La version initiale V0.3 est conservée directement dans `hardware/`. La V1 actuelle est dans `hardware/V1/`.
+Le dépôt contient une seule version active dans `hardware/V1/`. Les anciennes versions restent accessibles dans l’historique Git.
 
 Il s’agit d’une conception de prototype. Les performances réelles, la stabilité analogique et la CEM nécessitent des essais sur matériel ; aucune certification industrielle n’est revendiquée.

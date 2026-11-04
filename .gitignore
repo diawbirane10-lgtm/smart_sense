@@ -16,3 +16,9 @@ fp-lib-table
 /fabrication/
 /validation/
 /data/
+
+# Ancienne version et feuille non referencee
+/hardware/*.kicad_sch
+/hardware/*.kicad_pro
+/hardware/*.kicad_sym
+/hardware/sym-lib-table

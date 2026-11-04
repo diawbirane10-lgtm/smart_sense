@@ -1,1 +1,0 @@
-(sym_lib_table (version 7) (lib (name "SmartSense") (type "KiCad") (uri "${KIPRJMOD}/SmartSense_custom.kicad_sym") (options "") (descr "OPA320 verified DBV mapping; logical power modules")))

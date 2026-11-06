@@ -4,12 +4,12 @@ J’ai lancé ce projet personnel pour appliquer le module **Smart Capteurs & Ac
 
 J’y ajoute une étude de **représentation d’état** du filtre analogique : commandabilité, observabilité et observateur de Luenberger. Elle est testée sous MATLAB, pas encore embarquée.
 
-## Ouvrir les schémas
+## Ouvrir le projet
 
-Dans **KiCad 10**, ouvrir [SmartSense_V1.kicad_pro](hardware/V1/SmartSense_V1.kicad_pro), puis le schéma principal. Les 29 feuilles et la bibliothèque de symboles sont incluses.
+Dans **KiCad 10**, ouvrir [SmartSense_V1.kicad_pro](hardware/V1/SmartSense_V1.kicad_pro), puis le schéma principal. Les 29 feuilles, le PCB routé et les bibliothèques locales sont inclus. Ouvrir `SmartSense_V1.kicad_pcb` pour la carte.
 
-ERC sans violation. La carte n’est pas encore fabriquée ; le firmware et les essais restent à réaliser.
+ERC et DRC sans violation. La carte n’est pas encore fabriquée ; le firmware et les essais restent à réaliser.
 
-Le dépôt contient uniquement les schémas, sans PDF. Le PCB, le boîtier et le dossier de fabrication restent locaux.
+Aucun PDF dans le dépôt. Le boîtier et le dossier de fabrication restent locaux. Pour charger un programme dans la carte : [programmation et interfaces](PROGRAMMATION.md).
 
 [Mon portfolio](https://www.b-diaw.com)

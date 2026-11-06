@@ -1,0 +1,4 @@
+(version 1)
+(rule "U14 VSSOP adjacent pads"
+ (condition "A.Type == 'Pad' && B.Type == 'Pad' && A.memberOfFootprint('U14') && B.memberOfFootprint('U14')")
+ (constraint clearance (min 0.15mm)))

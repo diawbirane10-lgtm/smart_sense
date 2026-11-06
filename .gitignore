@@ -8,10 +8,7 @@ snapshot*/
 # PDF conserves localement pour le moment
 *.pdf
 
-# PCB, exports et documents conserves localement
-*.kicad_pcb
-*.kicad_mod
-fp-lib-table
+# Exports de fabrication et documents conserves localement
 /docs/
 /fabrication/
 /validation/

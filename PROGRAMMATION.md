@@ -6,7 +6,7 @@ Le STM32G431CBT6 est déjà le processeur de la carte. Sa mémoire Flash de 128 
 
 MATLAB sert à vérifier les équations du filtre et le comportement de l’observateur. Le firmware de la carte s’écrit en C ou C++, par exemple avec STM32CubeIDE, puis se compile pour le STM32. Le programme doit gérer l’horloge, les ADC, les timers d’émission, les calculs et les communications.
 
-Un observateur peut être codé avec des matrices de petite taille et des variables qui conservent l’état estimé entre deux échantillons. Le modèle MATLAB actuel suppose connue l’entrée PHOTO_LP, qui n’est pas acquise directement par la carte : il faut résoudre cette hypothèse avant de l’embarquer. Aucun firmware compilable ou testé sur matériel n’est fourni actuellement. Une estimation d’état n’exige pas un réseau de neurones.
+Le [noyau C](firmware/README.md) contient maintenant la détection I/Q, un observateur du signal ADC et les contrôles de validité temps réel. Il passe 22 tests sur PC et compile en objet Cortex-M4F. Le nouveau modèle de signal ne demande pas l’entrée PHOTO_LP ; le modèle physique du filtre conserve cette hypothèse pour son étude pédagogique. Une application complète à flasher, avec ses pilotes et ses tests sur carte, reste à réaliser.
 
 ## Charger et déboguer le code : J6
 

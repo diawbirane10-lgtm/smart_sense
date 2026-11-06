@@ -1,0 +1,40 @@
+{
+  "date": "2026-11-06",
+  "evidence": "Synthetic simulation, not hardware",
+  "fs_Hz": 200000,
+  "carrier_Hz": 10000,
+  "A": [
+    [
+      0.95105651629515353,
+      -0.3090169943749474,
+      0
+    ],
+    [
+      0.3090169943749474,
+      0.95105651629515353,
+      0
+    ],
+    [
+      0,
+      0,
+      1
+    ]
+  ],
+  "C": [
+    1,
+    0,
+    1
+  ],
+  "L": [
+    0.009515309766337807,
+    0.002977739937588186,
+    0.00099525539661364276
+  ],
+  "observability_rank": 3,
+  "observability_condition": 83.9133575245078,
+  "observer_spectral_radius": 0.99899999999999989,
+  "assumed_noise_std_V": 0.005,
+  "assumed_harmonic_amplitude_V": 0.015,
+  "simulated_amplitude_rmse_V": 0.0006775956074399883,
+  "needs_unmeasured_filter_input": false
+}

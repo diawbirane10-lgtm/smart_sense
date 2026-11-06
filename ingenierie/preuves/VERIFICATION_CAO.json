@@ -1,0 +1,13 @@
+{
+  "date": "2026-11-06",
+  "engine": "KiCad 10.0.5 native ERC/DRC and pcbnew netlist comparison",
+  "ERC": 0,
+  "DRC": 0,
+  "unconnected": 0,
+  "schematic_parity": 0,
+  "pin_net_comparisons": 370,
+  "pin_net_mismatches": 0,
+  "PCB_sha256": "8953908bcb82aa939371099dc1032d340dadc591b9a3600be3d00530039d721f",
+  "schematic_sha256": "20d0ceafbbbea8677381b6c5c98abba82657d1436682059f2138eef67ac8d5d5",
+  "evidence_limit": "CAD checks only; no physical prototype, EMC or performance measurements"
+}

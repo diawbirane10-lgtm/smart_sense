@@ -19,3 +19,14 @@ snapshot*/
 /hardware/*.kicad_pro
 /hardware/*.kicad_sym
 /hardware/sym-lib-table
+
+# Fichiers de compilation et caches locaux
+build/
+__pycache__/
+*.pyc
+*.obj
+*.o
+*.dll
+*.lib
+*.exp
+*.su

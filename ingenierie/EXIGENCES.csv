@@ -1,0 +1,13 @@
+﻿ID,Besoin,Critere,Preuve_attendue,Etat,Reference
+CAO01,Schéma et PCB cohérents,ERC=0;DRC=0;370 connexions sans écart,AUTO,PASS_AUTO,preuves/VERIFICATION_CAO.json
+LOG01,Noyau C et protections temps réel,22 tests hôte passent;objet Cortex-M4F compilé,AUTO,PASS_AUTO,preuves/RESULTATS_LOGICIEL.json
+EST01,Estimation depuis ADC sans PHOTO_LP,Observable 3/3;écart C/MATLAB inférieur à 0.1mV sur vecteur,SIMULATION,PASS_SIMULATION,../etudes/resultats/OBSERVATEUR_ADC.json
+ALIM01,Rails sous charge et démarrage,J8 objectif4.75 à5.25V à18/24/30V;pas de reset,LAB,A_MESURER,PROTOCOLE_BANC.md
+IR01,Barrière de laboratoire à100mm,Contraste libre/occulté supérieur à max20mV et6sigma après calibration,LAB,A_MESURER,PROTOCOLE_BANC.md
+IR02,Transition lisible et stable,200 interruptions sans erreur observée;latence inférieure à100ms dans conditions consignées,LAB,A_MESURER,PROTOCOLE_BANC.md
+RT01,Cadence et temps de calcul réels,IR200kéch/s;blocs2ms;calcul moins de1ms;aucune perte non signalée,LAB,A_MESURER,PROTOCOLE_BANC.md
+RT02,Données absentes ou acquisition en défaut,Invalider;état périmé après100ms observé au plus110ms avec tâche10ms;watchdog vérifié,LAB,A_MESURER,PROTOCOLE_BANC.md
+US01,Seconde voie ultrasonore,Émission40kHz et réception enregistrées avec géométrie fixe;pas de promesse de distance,LAB,A_MESURER,PROTOCOLE_BANC.md
+TEMP01,Mesure température,Comparer référence stabilisée20 à40C;objectif initial erreur absolue2C maximum,LAB,A_MESURER,PROTOCOLE_BANC.md
+MEC01,Montage complet et accès,Connecteurs accouplés;pas de pincement;SWD et service accessibles;optique alignée,FOURNISSEUR_ET_LAB,A_VERIFIER_SUR_PIECES,PROTOCOLE_BANC.md
+FW01,Application autonome programmable,Startup;ADC/DMA;timers;UART;watchdog;image liée;Flash relue;mesures tracées,CIBLE,A_INTEGRER,../firmware/INTEGRATION_STM32.md

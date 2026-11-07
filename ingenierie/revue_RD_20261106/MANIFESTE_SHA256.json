@@ -1,0 +1,18 @@
+{
+  "ingenierie/revue_RD_20261106/.gitattributes": "d025914145cc68d5c6e8584bde95ed78a9cb2ea7bc30dd401401c8ef9b919b8d",
+  "ingenierie/revue_RD_20261106/AUDIT_NATIF.json": "ceb463bbcb99ce9c4c5acc552461e8bffcbc64b7d2522547c109aaf2da38f675",
+  "ingenierie/revue_RD_20261106/DECISION_ET_REVUE.md": "150b54251b74f3f9d7fcf7df0bfc5311220a1bd4edd60b5e633f6da274d12c4d",
+  "ingenierie/revue_RD_20261106/DRC_FINAL.json": "ede1ac9f60b14adeb7520c7772763d387da54d81307b29d0dba75b349b0f24ba",
+  "ingenierie/revue_RD_20261106/ERC_FINAL.json": "27949cd587cfa9c13a801b4f7e6862cb32338a1cc7d4f1834337c991d7686b0f",
+  "ingenierie/revue_RD_20261106/MODELES_LINEAIRES.mat": "522958cdceb30cebe17611ff99e167d703ddf6ab3e7d7802cf112fd32fb89c62",
+  "ingenierie/revue_RD_20261106/REPRODUIRE.md": "f0deaa27b38d97d214215e8b1b0de35539fa196037568552c1a3f8de4dc42c57",
+  "ingenierie/revue_RD_20261106/RESULTATS_LOGICIEL.json": "72c93904b948e68ac848fd43ed7232764dd715a0dc56905938492833110e46cf",
+  "ingenierie/revue_RD_20261106/RESULTATS_MATLAB.json": "4dbc75c019de217b965059427ef3a4ca68f91e4062ba5920b2e69796125349dc",
+  "ingenierie/revue_RD_20261106/RESULTATS_SIMULINK.json": "45568a0f68832055390437d0168ab35e572427c813195138bfc4bc53fd32b7ca",
+  "ingenierie/revue_RD_20261106/REVUE_MODELES.png": "d239d88bb77d036dfe5bcf30aecc51f37b57bd0c640dc4620f236772642d3815",
+  "ingenierie/revue_RD_20261106/SmartSense_RD_Linear.slx": "ba113c5b5ec56c661172792c1e8b9e09ffe5fb419ace15ca8a2f91f8db26518b",
+  "ingenierie/revue_RD_20261106/SOURCES.md": "12ce96c55c7739fde2fb73e764185ff705e41217b93dd8665df3e1b98f883d9c",
+  "ingenierie/revue_RD_20261106/TESTS.csv": "747e98a6044228515e49648aff7024370f05cedc2353229266179c3b63fded61",
+  "ingenierie/revue_RD_20261106/VERIFICATION_FUSION_RD.json": "9e749ae90a8ed334af7ded6b3e628678cecef7361697c1b2b526ae65968ec8c8",
+  "ingenierie/revue_RD_20261106/verifier_kicad.py": "09370ae0c04fd2725c39698257eeb4eba4f7772fcdbae2ac0228d74603e888a0"
+}

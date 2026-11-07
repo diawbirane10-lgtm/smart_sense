@@ -1,3 +1,5 @@
+> Mise à jour du 6 novembre 2026 : la [revue R&D](revue_RD_20261106/DECISION_ET_REVUE.md) fixe le nouveau périmètre et les essais bloquants. Les performances physiques restent à mesurer.
+
 # Prototype de laboratoire : périmètre et preuves
 
 L’objectif principal est une **barrière infrarouge modulée caractérisable sur banc**. L’ultrason fournit une seconde chaîne d’émission/réception à étudier ; aucune précision de distance n’est annoncée. La thermistance sert d’abord à relever la température. L’écran est un affichage secondaire, le PC conserve les mesures et les états de validité.

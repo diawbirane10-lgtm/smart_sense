@@ -1,0 +1,19 @@
+ID,Type_preuve,Etat,Objet,Critere,Domaine,Moyens_ou_limites
+CAD01,AUTO,EXECUTE_PASS,ERC/DRC et parité,0 violations;370 affectations sans écart,Avant chaque changement électrique,Netliste fraîche et rapports
+MOD01,SIMULATION,EXECUTE_PASS,Tolérances et gains,5000 tirages;modèle idéal;quantiles publiés,Deux chaînes;graine61106,RESULTATS_MATLAB.json
+MOD02,SIMULATION,EXECUTE_PASS,Identifiabilité,Rang1 sans référence;rang2 avec référence idéale,Scène/gain multiplicatifs,Contre-exemple;pas preuve matérielle
+MOD03,SIMULATION,EXECUTE_PASS,MATLAB/Simulink,Écart nominal <1e-8 V,200kéch/s;5ms,RESULTATS_SIMULINK.json
+SW01,LOGICIEL_HOTE,EXECUTE_PASS,Noyau C et ARM,22 tests;0 échec;objet ARM compilé,Pas image complète ni temps réel,RESULTATS_LOGICIEL.json
+PWR01,LAB,A_FAIRE,Alimentation et charge,Rails dans fenêtres fournisseurs;aucun reset;courants et températures tracés,18/24/30V;écran+US actifs/inactifs;démarrage10fois/point,Oscilloscope;alim limitée;sonde température
+ANA01,LAB,A_FAIRE,Transfert analogique,Écart modèle expliqué;réponse et bruit enregistrés;aucune oscillation,Injection bornée;IR1–200kHz;US10–200kHz;amplitude progressivement limitée,Générateur calibré;sonde haute impédance
+ANA02,LAB,A_FAIRE,Saturation cachée TIA,Aucune mesure déclarée valide à tort dans domaine retenu;sinon réduire domaine/ajouter moniteur DC,Éclairage gradué mesuré;TP V_TIA et ADC simultanés,Pas de laser ni exposition hors limites
+ALI01,LAB,A_FAIRE,Repliement spectral,Budget de perturbation fixé après mesure;erreur I/Q caractérisée,190kHz IR;160kHz US;plus balayage et harmoniques;injection électrique bornée,Comparer spectres avant/après ADC
+IR01,LAB,A_FAIRE,Signal de base et géométrie,À0deg:contraste >max(20mV;6sigma) objectif initial;horsaxe:cartographie sans promesse de couverture,100mm;0/±15/±30deg;au moins3séances;pas portée garantie,Règle/gabarit;éclairage et température consignés
+ID01,LAB,A_FAIRE,Scène ou perte de chaîne,Tester si référence lève ambiguïté à contraste comparable;sinon NO-GO diagnostic de cause,Masque scène;atténuation amovible;LED de référence avant/après;ordre randomisé,Ne pas injecter faute numérique à la place de défaut physique
+US01,LAB,A_FAIRE,Écho et diaphonie,Signal enregistré;zone morte et saturation déterminées avant distance annoncée,40kHz;bursts8/16cycles candidats;0.2/0.5/1m objectifs;parois inclinées/tissu,Temps mort et intervalle validés;pas balayage large arbitraire
+RT01,CIBLE,A_FAIRE,ADC DMA watchdog,200k séquences/s candidat;bloc2ms;calcul<1ms objectif;chaque perte invalide,Écran/UART/US en charge;10^6blocs;reset;wrap;débranchements autorisés,GPIO de chronométrage;analyseur logique;fichier map
+COM01,CIBLE,A_FAIRE,Traçabilité et communication,Compteur/âge/statut/CRC et métadonnées;pas de reprise valeur périmée,Perte UART;trame corrompue;PC absent;captures courtes,3voies1.2Mo/s non diffusables à115200
+EMC01,LAB_PRELIMINAIRE,A_FAIRE,Couplage interne,Variation gain/bruit mesurée vs budget de signal;aucune conformité revendiquée,Écran ON/OFF;US ON/OFF;câbles disposés et longueurs consignées,Mesures analogiques;vrai labo CEM ultérieur
+MEC01,LAB,A_FAIRE,Ajustement et optique,Sans effort ni contact diode;cap opaque en IR;référence répétable,Coupon FDM;10insertions;cap en place/retiré;traction faisceaux selon pièces,PasIP;pas essai destructif sous tension
+STAT01,ANALYSE,A_FAIRE,Évaluation indépendante,Matrice erreurs+indéterminés;IC;courbes erreur/disponibilité;latenceP50/P95/P99,Séparer séances/objets;réglage figé;défauts simultanés et inconnus,Ne pas assimiler trames corrélées à essais indépendants
+REL01,FOURNISSEUR,A_FAIRE,PCBA,BOM/empreintes/orientations/faisceaux confirmés;coût total validé,1 et2cartes;montage complet;aucune soudure utilisateur,Pas commande ni transmission sans instruction spécifique

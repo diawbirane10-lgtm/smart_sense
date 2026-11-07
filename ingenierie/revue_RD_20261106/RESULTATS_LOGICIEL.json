@@ -1,0 +1,23 @@
+{
+  "date": "2026-11-06",
+  "tests_run": 22,
+  "passed": true,
+  "failed": 0,
+  "execution": "Windows x86_64 host",
+  "arm_build": "Cortex-M4F hard-float object; not linked or flashed",
+  "compiler": "clang version 16.0.6",
+  "core_c_sha256": "d7b9720ca8d3091b7c98fdd5f67444247799220b8f77ad13daa0e46a22b38fae",
+  "observer_bytes": 16,
+  "detector_bytes": 32,
+  "arm_object_allocated_sections_bytes": 2690,
+  "core_max_static_stack_bytes_per_function": 56,
+  "realtime_guard_bytes": 36,
+  "metrics": {
+    "iq_max_quantised_amplitude_error_V": 0.00024424195289612927,
+    "iq_9kHz_ideal_coherent_bin_residual_V": 5.901235766714308e-08,
+    "observer_noiseless_amplitude_error_V": 2.3365020752064147e-06,
+    "observer_simulated_5mV_noise_amplitude_rmse_V": 0.0003490463379263809,
+    "observer_simulated_step_first_entry_10percent_s": 0.004395,
+    "max_C_float_vs_MATLAB_double_difference_V": 1.8721049732661754e-06
+  }
+}

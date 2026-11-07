@@ -1,0 +1,10 @@
+{
+  "type": "Nominal discrete linear simulation, not real-time hardware test",
+  "sample_rate_Hz": 200000,
+  "duration_s": 0.005,
+  "max_difference_V": [
+    1.6271706204662451E-15,
+    2.8229155124570582E-14
+  ],
+  "passed": true
+}

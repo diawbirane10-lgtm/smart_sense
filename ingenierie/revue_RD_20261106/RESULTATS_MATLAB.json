@@ -1,0 +1,62 @@
+{
+  "date": "2026-11-06",
+  "evidence": "SIMULATION ONLY; ideal op amps; no EMC/thermal/physical validation",
+  "monte_carlo_trials": 5000,
+  "seed": 61106,
+  "IR_transimpedance_10k_V_per_A": 45273.740398748028,
+  "IR_gain_10k_q05_q50_q95": [
+    44850.600714180015,
+    45270.906381442896,
+    45698.074843531613
+  ],
+  "US_voltage_gain_40k": 14.079838570699369,
+  "US_gain_40k_q05_q50_q95": [
+    13.46705681825788,
+    14.071492760659082,
+    14.694137227470868
+  ],
+  "IR_AA_f0_q05_q50_q95_Hz": [
+    20726.068322237079,
+    21046.861615019639,
+    21364.818687658393
+  ],
+  "US_AA_f0_q05_q50_q95_Hz": [
+    42449.407326087152,
+    43086.661694616152,
+    43764.820912823656
+  ],
+  "IR_alias_190k_relative_dB": -59.485854050707815,
+  "US_alias_160k_relative_dB": -29.823471296375416,
+  "identifiability_rank_amplitude_only": 1,
+  "rank_with_known_reference": 2,
+  "reference_noise_experiments": [
+    {
+      "noise_std": 0.002,
+      "trials": 2000,
+      "transmission_rmse": 0.0029221631210609219,
+      "gain_rmse": 0.0019548068488424489
+    },
+    {
+      "noise_std": 0.01,
+      "trials": 2000,
+      "transmission_rmse": 0.014722960370210588,
+      "gain_rmse": 0.0096342806220194432
+    }
+  ],
+  "IR_assumed_linear_headroom_V": 1.4,
+  "IR_approx_DC_photocurrent_headroom_A": 0.00014,
+  "US_approx_linear_input_at40k_V": 0.099432958195518548,
+  "raw_two_channel_bytes_per_s": 800000,
+  "UART_115200_payload_bytes_per_s": 11520,
+  "raw_to_uart_ratio": 69.444444444444443,
+  "dma_double_buffer_two_channels_bytes": 3200,
+  "ADC_acquisition_timing_validated": false,
+  "zero_misses_trials_for_95pct_upper_bound_1e_3": 2995,
+  "limits": [
+    "Reference is hypothetical fixture, not a V1 onboard function",
+    "No arbitrary-frequency ultrasonic sweep justified with resonant 40k transducers",
+    "Monte Carlo is not a worst-case bound",
+    "Raw data UART bandwidth insufficient; use triggered captures/decimation",
+    "Temperature, parasitics, stability, ADC kickback and component spread need bench tests"
+  ]
+}

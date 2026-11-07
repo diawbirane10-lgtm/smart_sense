@@ -1,0 +1,1220 @@
+{
+  "source": "KiCad native Python and fresh CLI netlist",
+  "kicad": "10.0.5",
+  "layers": 4,
+  "footprints": 156,
+  "pin_net_checked": 370,
+  "mismatches": [],
+  "components": {
+    "C1": {
+      "value": "2.2u 100V X7R",
+      "pins": {
+        "2": "GND",
+        "1": "VIN24"
+      }
+    },
+    "C2": {
+      "value": "100n 100V X7R",
+      "pins": {
+        "2": "GND",
+        "1": "VIN24"
+      }
+    },
+    "D1": {
+      "value": "SS1H10 100V",
+      "pins": {
+        "2": "VIN_FUSED",
+        "1": "VIN_REV"
+      }
+    },
+    "D2": {
+      "value": "SMBJ33A",
+      "pins": {
+        "2": "GND",
+        "1": "VIN_REV"
+      }
+    },
+    "F1": {
+      "value": "500mA 125V fast",
+      "pins": {
+        "2": "VIN_FUSED",
+        "1": "VIN_RAW"
+      }
+    },
+    "J1": {
+      "value": "24V SELV 18-30V",
+      "pins": {
+        "2": "GND",
+        "1": "VIN_RAW"
+      }
+    },
+    "R1": {
+      "value": "2.2R 0.5W pulse",
+      "pins": {
+        "2": "VIN24",
+        "1": "VIN_REV"
+      }
+    },
+    "U1": {
+      "value": "TSR 1-4850WI 5V 1A",
+      "pins": {
+        "3": "+5V",
+        "2": "GND",
+        "1": "VIN24"
+      }
+    },
+    "C3": {
+      "value": "10u 16V X7R",
+      "pins": {
+        "1": "+5V",
+        "2": "GND"
+      }
+    },
+    "C4": {
+      "value": "2.2u 16V X7R",
+      "pins": {
+        "1": "+5V",
+        "2": "GND"
+      }
+    },
+    "C5": {
+      "value": "4.7u 10V X7R",
+      "pins": {
+        "1": "+3V3_D",
+        "2": "GND"
+      }
+    },
+    "C6": {
+      "value": "2.2u 16V X7R",
+      "pins": {
+        "1": "+5V",
+        "2": "GND"
+      }
+    },
+    "C7": {
+      "value": "4.7u 10V X7R",
+      "pins": {
+        "1": "+3V3_A",
+        "2": "GND"
+      }
+    },
+    "D3": {
+      "value": "GREEN 0805",
+      "pins": {
+        "1": "GND",
+        "2": "PWR_LED"
+      }
+    },
+    "U2": {
+      "value": "TLV75533PDBVR",
+      "pins": {
+        "5": "+3V3_D",
+        "1": "+5V",
+        "3": "+5V",
+        "2": "GND",
+        "4": "unconnected-(U2-NC-Pad4)"
+      }
+    },
+    "U3": {
+      "value": "TLV75533PDBVR",
+      "pins": {
+        "5": "+3V3_A",
+        "1": "+5V",
+        "3": "+5V",
+        "2": "GND",
+        "4": "unconnected-(U3-NC-Pad4)"
+      }
+    },
+    "R2": {
+      "value": "2.2k",
+      "pins": {
+        "1": "+3V3_D",
+        "2": "PWR_LED"
+      }
+    },
+    "C8": {
+      "value": "1u 10V X7R",
+      "pins": {
+        "2": "GND",
+        "1": "VREF_RAW"
+      }
+    },
+    "C9": {
+      "value": "10u 10V X7R",
+      "pins": {
+        "2": "GND",
+        "1": "VREF_1V65"
+      }
+    },
+    "C10": {
+      "value": "100n 16V X7R",
+      "pins": {
+        "1": "+3V3_A",
+        "2": "GND"
+      }
+    },
+    "R3": {
+      "value": "10k 0.1%",
+      "pins": {
+        "1": "+3V3_A",
+        "2": "VREF_RAW"
+      }
+    },
+    "R4": {
+      "value": "10k 0.1%",
+      "pins": {
+        "2": "GND",
+        "1": "VREF_RAW"
+      }
+    },
+    "R5": {
+      "value": "47R",
+      "pins": {
+        "2": "VREF_1V65",
+        "1": "VREF_BUF"
+      }
+    },
+    "U4": {
+      "value": "OPA320AIDBVR",
+      "pins": {
+        "5": "+3V3_A",
+        "2": "GND",
+        "1": "VREF_BUF",
+        "4": "VREF_BUF",
+        "3": "VREF_RAW"
+      }
+    },
+    "J2": {
+      "value": "REMOTE TSAL6200 K=2",
+      "pins": {
+        "1": "IR_ANODE",
+        "2": "IR_CATHODE"
+      }
+    },
+    "Q1": {
+      "value": "AO3400A",
+      "pins": {
+        "2": "GND",
+        "3": "IR_CATHODE",
+        "1": "IR_GATE"
+      }
+    },
+    "R6": {
+      "value": "100R",
+      "pins": {
+        "2": "IR_GATE",
+        "1": "IR_PWM"
+      }
+    },
+    "R7": {
+      "value": "100k",
+      "pins": {
+        "2": "GND",
+        "1": "IR_GATE"
+      }
+    },
+    "R8": {
+      "value": "180R 1% 0.25W",
+      "pins": {
+        "1": "+5V",
+        "2": "IR_ANODE"
+      }
+    },
+    "C11": {
+      "value": "100p C0G 5%",
+      "pins": {
+        "1": "PD_SUM",
+        "2": "V_TIA"
+      }
+    },
+    "C12": {
+      "value": "100n 16V X7R",
+      "pins": {
+        "1": "+3V3_A",
+        "2": "GND"
+      }
+    },
+    "D4": {
+      "value": "BPW34",
+      "pins": {
+        "1": "+3V3_A",
+        "2": "PD_SUM"
+      }
+    },
+    "R9": {
+      "value": "10k 0.1%",
+      "pins": {
+        "1": "PD_SUM",
+        "2": "V_TIA"
+      }
+    },
+    "U5": {
+      "value": "OPA320AIDBVR",
+      "pins": {
+        "5": "+3V3_A",
+        "2": "GND",
+        "4": "PD_SUM",
+        "3": "VREF_1V65",
+        "1": "V_TIA"
+      }
+    },
+    "C13": {
+      "value": "10n C0G 5%",
+      "pins": {
+        "2": "PHOTO_HP",
+        "1": "V_TIA"
+      }
+    },
+    "C14": {
+      "value": "6.8n C0G 5%",
+      "pins": {
+        "2": "GND",
+        "1": "PHOTO_LP"
+      }
+    },
+    "C15": {
+      "value": "100n 16V X7R",
+      "pins": {
+        "1": "+3V3_A",
+        "2": "GND"
+      }
+    },
+    "R10": {
+      "value": "10k 1%",
+      "pins": {
+        "1": "PHOTO_HP",
+        "2": "VREF_1V65"
+      }
+    },
+    "R11": {
+      "value": "1k 1%",
+      "pins": {
+        "1": "PHOTO_GAIN",
+        "2": "PHOTO_LP"
+      }
+    },
+    "R12": {
+      "value": "10k 0.1%",
+      "pins": {
+        "1": "PHOTO_INV",
+        "2": "VREF_1V65"
+      }
+    },
+    "R13": {
+      "value": "40.2k 0.1%",
+      "pins": {
+        "2": "PHOTO_GAIN",
+        "1": "PHOTO_INV"
+      }
+    },
+    "U6": {
+      "value": "OPA320AIDBVR",
+      "pins": {
+        "5": "+3V3_A",
+        "2": "GND",
+        "1": "PHOTO_GAIN",
+        "3": "PHOTO_HP",
+        "4": "PHOTO_INV"
+      }
+    },
+    "C16": {
+      "value": "2.2n C0G 2%",
+      "pins": {
+        "1": "PHAA_A",
+        "2": "PHAA_BUF"
+      }
+    },
+    "C17": {
+      "value": "1n C0G 2%",
+      "pins": {
+        "2": "GND",
+        "1": "PHAA_B"
+      }
+    },
+    "C18": {
+      "value": "100n 16V X7R",
+      "pins": {
+        "1": "+3V3_A",
+        "2": "GND"
+      }
+    },
+    "C19": {
+      "value": "1n C0G 5%",
+      "pins": {
+        "1": "ADC_PHOTO",
+        "2": "GND"
+      }
+    },
+    "R14": {
+      "value": "5.1k 1%",
+      "pins": {
+        "2": "PHAA_A",
+        "1": "PHOTO_LP"
+      }
+    },
+    "R15": {
+      "value": "5.1k 1%",
+      "pins": {
+        "1": "PHAA_A",
+        "2": "PHAA_B"
+      }
+    },
+    "R16": {
+      "value": "100R",
+      "pins": {
+        "2": "ADC_PHOTO",
+        "1": "PHAA_BUF"
+      }
+    },
+    "U7": {
+      "value": "OPA320AIDBVR",
+      "pins": {
+        "5": "+3V3_A",
+        "2": "GND",
+        "3": "PHAA_B",
+        "1": "PHAA_BUF",
+        "4": "PHAA_BUF"
+      }
+    },
+    "C20": {
+      "value": "100n 16V X7R",
+      "pins": {
+        "1": "+5V",
+        "2": "GND"
+      }
+    },
+    "C21": {
+      "value": "100n 16V X7R",
+      "pins": {
+        "1": "+3V3_D",
+        "2": "GND"
+      }
+    },
+    "C22": {
+      "value": "10u 16V X7R",
+      "pins": {
+        "1": "+5V",
+        "2": "GND"
+      }
+    },
+    "J3": {
+      "value": "MA40S4S TX",
+      "pins": {
+        "1": "US_TX_A",
+        "2": "US_TX_B"
+      }
+    },
+    "R17": {
+      "value": "22R 0.25W",
+      "pins": {
+        "1": "US_DRV_A",
+        "2": "US_TX_A"
+      }
+    },
+    "R18": {
+      "value": "22R 0.25W",
+      "pins": {
+        "1": "US_DRV_B",
+        "2": "US_TX_B"
+      }
+    },
+    "R19": {
+      "value": "100k",
+      "pins": {
+        "2": "GND",
+        "1": "US_SLEEP"
+      }
+    },
+    "U8": {
+      "value": "DRV8837DSGR",
+      "pins": {
+        "8": "+3V3_D",
+        "1": "+5V",
+        "4": "GND",
+        "9": "GND",
+        "2": "US_DRV_A",
+        "3": "US_DRV_B",
+        "6": "US_IN1",
+        "5": "US_IN2",
+        "7": "US_SLEEP"
+      }
+    },
+    "C23": {
+      "value": "1n C0G 5%",
+      "pins": {
+        "2": "US_RX_BIAS",
+        "1": "US_RX_LIMIT"
+      }
+    },
+    "D5": {
+      "value": "PESD5V0S1BA",
+      "pins": {
+        "2": "GND",
+        "1": "US_RX_RAW"
+      }
+    },
+    "J4": {
+      "value": "MA40S4R RX",
+      "pins": {
+        "2": "GND",
+        "1": "US_RX_RAW"
+      }
+    },
+    "R20": {
+      "value": "4.7k",
+      "pins": {
+        "2": "US_RX_LIMIT",
+        "1": "US_RX_RAW"
+      }
+    },
+    "R21": {
+      "value": "1M 1%",
+      "pins": {
+        "1": "US_RX_BIAS",
+        "2": "VREF_1V65"
+      }
+    },
+    "R22": {
+      "value": "10k 0.1%",
+      "pins": {
+        "1": "US_INV1",
+        "2": "VREF_1V65"
+      }
+    },
+    "R23": {
+      "value": "100k 0.1%",
+      "pins": {
+        "2": "US_AMP1",
+        "1": "US_INV1"
+      }
+    },
+    "U9": {
+      "value": "OPA320AIDBVR",
+      "pins": {
+        "5": "+3V3_A",
+        "2": "GND",
+        "1": "US_AMP1",
+        "4": "US_INV1",
+        "3": "US_RX_BIAS"
+      }
+    },
+    "C24": {
+      "value": "100n 16V X7R",
+      "pins": {
+        "1": "+3V3_A",
+        "2": "GND"
+      }
+    },
+    "C25": {
+      "value": "1n C0G 5%",
+      "pins": {
+        "1": "US_AMP1",
+        "2": "US_HP"
+      }
+    },
+    "C26": {
+      "value": "1n C0G 5%",
+      "pins": {
+        "2": "GND",
+        "1": "US_LP"
+      }
+    },
+    "C27": {
+      "value": "100n 16V X7R",
+      "pins": {
+        "1": "+3V3_A",
+        "2": "GND"
+      }
+    },
+    "R24": {
+      "value": "6.8k 1%",
+      "pins": {
+        "1": "US_HP",
+        "2": "VREF_1V65"
+      }
+    },
+    "R25": {
+      "value": "2.2k 1%",
+      "pins": {
+        "1": "US_HP",
+        "2": "US_LP"
+      }
+    },
+    "R26": {
+      "value": "10k 0.1%",
+      "pins": {
+        "1": "US_INV2",
+        "2": "VREF_1V65"
+      }
+    },
+    "R27": {
+      "value": "33k 0.1%",
+      "pins": {
+        "2": "US_GAIN2",
+        "1": "US_INV2"
+      }
+    },
+    "U10": {
+      "value": "OPA320AIDBVR",
+      "pins": {
+        "5": "+3V3_A",
+        "2": "GND",
+        "1": "US_GAIN2",
+        "4": "US_INV2",
+        "3": "US_LP"
+      }
+    },
+    "C28": {
+      "value": "2.2n C0G 2%",
+      "pins": {
+        "1": "USAA_A",
+        "2": "USAA_BUF"
+      }
+    },
+    "C29": {
+      "value": "1n C0G 2%",
+      "pins": {
+        "2": "GND",
+        "1": "USAA_B"
+      }
+    },
+    "C30": {
+      "value": "100n 16V X7R",
+      "pins": {
+        "1": "+3V3_A",
+        "2": "GND"
+      }
+    },
+    "C31": {
+      "value": "22n C0G 5%",
+      "pins": {
+        "1": "ADC_US",
+        "2": "GND"
+      }
+    },
+    "R28": {
+      "value": "2.49k 1%",
+      "pins": {
+        "2": "USAA_A",
+        "1": "US_GAIN2"
+      }
+    },
+    "R29": {
+      "value": "2.49k 1%",
+      "pins": {
+        "1": "USAA_A",
+        "2": "USAA_B"
+      }
+    },
+    "R30": {
+      "value": "100R",
+      "pins": {
+        "2": "ADC_US",
+        "1": "USAA_BUF"
+      }
+    },
+    "U11": {
+      "value": "OPA320AIDBVR",
+      "pins": {
+        "5": "+3V3_A",
+        "2": "GND",
+        "3": "USAA_B",
+        "1": "USAA_BUF",
+        "4": "USAA_BUF"
+      }
+    },
+    "U12": {
+      "value": "STM32G431CBT6",
+      "pins": {
+        "20": "+3V3_A",
+        "21": "+3V3_A",
+        "1": "+3V3_D",
+        "24": "+3V3_D",
+        "36": "+3V3_D",
+        "48": "+3V3_D",
+        "8": "ADC_PHOTO",
+        "16": "ADC_TEMP",
+        "9": "ADC_US",
+        "45": "BOOT0",
+        "19": "GND",
+        "23": "GND",
+        "35": "GND",
+        "47": "GND",
+        "44": "HMI_ENABLE",
+        "32": "HMI_UART_RX",
+        "31": "HMI_UART_TX",
+        "5": "HSE_IN",
+        "43": "IR_PWM",
+        "7": "NRST",
+        "38": "SWCLK",
+        "37": "SWDIO",
+        "11": "UART_RX",
+        "10": "UART_TX",
+        "30": "US_IN1",
+        "15": "US_IN2",
+        "42": "US_SLEEP",
+        "12": "unconnected-(U12-PA4-Pad12)",
+        "13": "unconnected-(U12-PA5-Pad13)",
+        "14": "unconnected-(U12-PA6-Pad14)",
+        "33": "unconnected-(U12-PA11-Pad33)",
+        "34": "unconnected-(U12-PA12-Pad34)",
+        "39": "unconnected-(U12-PA15-Pad39)",
+        "17": "unconnected-(U12-PB1-Pad17)",
+        "18": "unconnected-(U12-PB2-Pad18)",
+        "40": "unconnected-(U12-PB3-Pad40)",
+        "41": "unconnected-(U12-PB4-Pad41)",
+        "46": "unconnected-(U12-PB9-Pad46)",
+        "22": "unconnected-(U12-PB10-Pad22)",
+        "25": "unconnected-(U12-PB11-Pad25)",
+        "26": "unconnected-(U12-PB12-Pad26)",
+        "27": "unconnected-(U12-PB13-Pad27)",
+        "28": "unconnected-(U12-PB14-Pad28)",
+        "29": "unconnected-(U12-PB15-Pad29)",
+        "2": "unconnected-(U12-PC13-Pad2)",
+        "3": "unconnected-(U12-PC14-Pad3)",
+        "4": "unconnected-(U12-PC15-Pad4)",
+        "6": "unconnected-(U12-PF1-Pad6)"
+      }
+    },
+    "C32": {
+      "value": "100n 16V X7R",
+      "pins": {
+        "2": "GND",
+        "1": "NRST"
+      }
+    },
+    "C33": {
+      "value": "100n 16V X7R",
+      "pins": {
+        "1": "+3V3_D",
+        "2": "GND"
+      }
+    },
+    "C34": {
+      "value": "100n 16V X7R",
+      "pins": {
+        "1": "+3V3_D",
+        "2": "GND"
+      }
+    },
+    "C35": {
+      "value": "100n 16V X7R",
+      "pins": {
+        "1": "+3V3_D",
+        "2": "GND"
+      }
+    },
+    "C36": {
+      "value": "100n 16V X7R",
+      "pins": {
+        "1": "+3V3_D",
+        "2": "GND"
+      }
+    },
+    "C37": {
+      "value": "4.7u 10V X7R",
+      "pins": {
+        "1": "+3V3_D",
+        "2": "GND"
+      }
+    },
+    "R31": {
+      "value": "10k",
+      "pins": {
+        "1": "BOOT0",
+        "2": "GND"
+      }
+    },
+    "R32": {
+      "value": "10k",
+      "pins": {
+        "1": "+3V3_D",
+        "2": "NRST"
+      }
+    },
+    "C38": {
+      "value": "100n 16V X7R",
+      "pins": {
+        "1": "+3V3_A",
+        "2": "GND"
+      }
+    },
+    "C39": {
+      "value": "1u 10V X7R",
+      "pins": {
+        "1": "+3V3_A",
+        "2": "GND"
+      }
+    },
+    "C40": {
+      "value": "100n 16V X7R",
+      "pins": {
+        "1": "+3V3_D",
+        "2": "GND"
+      }
+    },
+    "J5": {
+      "value": "103AT-2 10k B3435 1%",
+      "pins": {
+        "2": "GND",
+        "1": "NTC_RAW"
+      }
+    },
+    "R33": {
+      "value": "33R",
+      "pins": {
+        "2": "HSE_IN",
+        "1": "HSE_OSC"
+      }
+    },
+    "R34": {
+      "value": "10k 0.1%",
+      "pins": {
+        "1": "+3V3_A",
+        "2": "NTC_RAW"
+      }
+    },
+    "R35": {
+      "value": "1k",
+      "pins": {
+        "2": "ADC_TEMP",
+        "1": "NTC_RAW"
+      }
+    },
+    "Y1": {
+      "value": "ASV-8.000MHZ-EJ-T",
+      "pins": {
+        "1": "+3V3_D",
+        "4": "+3V3_D",
+        "2": "GND",
+        "3": "HSE_OSC"
+      }
+    },
+    "C41": {
+      "value": "100n 16V X7R",
+      "pins": {
+        "1": "ADC_TEMP",
+        "2": "GND"
+      }
+    },
+    "J6": {
+      "value": "Cortex SWD 1.27mm",
+      "pins": {
+        "1": "+3V3_D",
+        "3": "GND",
+        "5": "GND",
+        "9": "GND",
+        "10": "NRST",
+        "4": "SWCLK",
+        "2": "SWDIO",
+        "6": "unconnected-(J6-Pin_6-Pad6)",
+        "7": "unconnected-(J6-Pin_7-Pad7)",
+        "8": "unconnected-(J6-Pin_8-Pad8)"
+      }
+    },
+    "J7": {
+      "value": "UART 3V3 SERVICE",
+      "pins": {
+        "1": "GND",
+        "4": "GND",
+        "3": "UART_RX",
+        "2": "UART_TX"
+      }
+    },
+    "TP1": {
+      "value": "GND",
+      "pins": {
+        "1": "GND"
+      }
+    },
+    "TP2": {
+      "value": "GND",
+      "pins": {
+        "1": "GND"
+      }
+    },
+    "TP3": {
+      "value": "GND",
+      "pins": {
+        "1": "GND"
+      }
+    },
+    "TP4": {
+      "value": "GND",
+      "pins": {
+        "1": "GND"
+      }
+    },
+    "TP5": {
+      "value": "GND",
+      "pins": {
+        "1": "GND"
+      }
+    },
+    "TP6": {
+      "value": "+5V",
+      "pins": {
+        "1": "+5V"
+      }
+    },
+    "TP7": {
+      "value": "+3V3_A",
+      "pins": {
+        "1": "+3V3_A"
+      }
+    },
+    "TP8": {
+      "value": "+3V3_D",
+      "pins": {
+        "1": "+3V3_D"
+      }
+    },
+    "H1": {
+      "value": "M3 NPTH",
+      "pins": {}
+    },
+    "H2": {
+      "value": "M3 NPTH",
+      "pins": {}
+    },
+    "H3": {
+      "value": "M3 NPTH",
+      "pins": {}
+    },
+    "H4": {
+      "value": "M3 NPTH",
+      "pins": {}
+    },
+    "TP9": {
+      "value": "VREF_1V65",
+      "pins": {
+        "1": "VREF_1V65"
+      }
+    },
+    "TP10": {
+      "value": "V_TIA",
+      "pins": {
+        "1": "V_TIA"
+      }
+    },
+    "TP11": {
+      "value": "ADC_PHOTO",
+      "pins": {
+        "1": "ADC_PHOTO"
+      }
+    },
+    "TP12": {
+      "value": "ADC_US",
+      "pins": {
+        "1": "ADC_US"
+      }
+    },
+    "P1": {
+      "value": "PWR_FLAG",
+      "pins": {
+        "1": "GND"
+      }
+    },
+    "P2": {
+      "value": "PWR_FLAG",
+      "pins": {
+        "1": "VIN_RAW"
+      }
+    },
+    "P3": {
+      "value": "PWR_FLAG",
+      "pins": {
+        "1": "VIN24"
+      }
+    },
+    "TP13": {
+      "value": "GND",
+      "pins": {
+        "1": "GND"
+      }
+    },
+    "TP14": {
+      "value": "GND",
+      "pins": {
+        "1": "GND"
+      }
+    },
+    "TP15": {
+      "value": "GND",
+      "pins": {
+        "1": "GND"
+      }
+    },
+    "TP16": {
+      "value": "GND",
+      "pins": {
+        "1": "GND"
+      }
+    },
+    "TP17": {
+      "value": "GND",
+      "pins": {
+        "1": "GND"
+      }
+    },
+    "TP18": {
+      "value": "GND",
+      "pins": {
+        "1": "GND"
+      }
+    },
+    "TP19": {
+      "value": "GND",
+      "pins": {
+        "1": "GND"
+      }
+    },
+    "TP20": {
+      "value": "GND",
+      "pins": {
+        "1": "GND"
+      }
+    },
+    "TP21": {
+      "value": "GND",
+      "pins": {
+        "1": "GND"
+      }
+    },
+    "TP22": {
+      "value": "GND",
+      "pins": {
+        "1": "GND"
+      }
+    },
+    "TP23": {
+      "value": "GND",
+      "pins": {
+        "1": "GND"
+      }
+    },
+    "TP24": {
+      "value": "GND",
+      "pins": {
+        "1": "GND"
+      }
+    },
+    "TP25": {
+      "value": "GND",
+      "pins": {
+        "1": "GND"
+      }
+    },
+    "TP26": {
+      "value": "GND",
+      "pins": {
+        "1": "GND"
+      }
+    },
+    "TP27": {
+      "value": "GND",
+      "pins": {
+        "1": "GND"
+      }
+    },
+    "TP28": {
+      "value": "GND",
+      "pins": {
+        "1": "GND"
+      }
+    },
+    "TP29": {
+      "value": "GND",
+      "pins": {
+        "1": "GND"
+      }
+    },
+    "TP30": {
+      "value": "GND",
+      "pins": {
+        "1": "GND"
+      }
+    },
+    "TP31": {
+      "value": "GND",
+      "pins": {
+        "1": "GND"
+      }
+    },
+    "C42": {
+      "value": "100u 10V low ESR",
+      "pins": {
+        "1": "+5V_HMI",
+        "2": "GND"
+      }
+    },
+    "C43": {
+      "value": "2.2u 16V X7R",
+      "pins": {
+        "1": "+5V_HMI",
+        "2": "GND"
+      }
+    },
+    "C44": {
+      "value": "4.7u 10V X7R",
+      "pins": {
+        "1": "+3V3_HMI",
+        "2": "GND"
+      }
+    },
+    "C47": {
+      "value": "100n 100V X7R",
+      "pins": {
+        "1": "+5V_HMI",
+        "2": "GND"
+      }
+    },
+    "FB1": {
+      "value": "220R@100MHz 2A",
+      "pins": {
+        "1": "+5V",
+        "2": "+5V_HMI"
+      }
+    },
+    "U13": {
+      "value": "TLV75533PDBVR",
+      "pins": {
+        "5": "+3V3_HMI",
+        "1": "+5V_HMI",
+        "3": "+5V_HMI",
+        "2": "GND",
+        "4": "unconnected-(U13-NC-Pad4)"
+      }
+    },
+    "C45": {
+      "value": "100n 100V X7R",
+      "pins": {
+        "1": "+3V3_D",
+        "2": "GND"
+      }
+    },
+    "C46": {
+      "value": "100n 100V X7R",
+      "pins": {
+        "1": "+3V3_HMI",
+        "2": "GND"
+      }
+    },
+    "R36": {
+      "value": "100R 1%",
+      "pins": {
+        "2": "HMI_RX",
+        "1": "HMI_RX_SER"
+      }
+    },
+    "R37": {
+      "value": "100R 1%",
+      "pins": {
+        "1": "HMI_TX",
+        "2": "HMI_TX_SER"
+      }
+    },
+    "R38": {
+      "value": "100k 1%",
+      "pins": {
+        "2": "GND",
+        "1": "HMI_ENABLE"
+      }
+    },
+    "U14": {
+      "value": "TXU0202DCUR",
+      "pins": {
+        "3": "+3V3_D",
+        "7": "+3V3_HMI",
+        "2": "GND",
+        "6": "HMI_ENABLE",
+        "8": "HMI_RX_SER",
+        "1": "HMI_TX_SER",
+        "4": "HMI_UART_RX",
+        "5": "HMI_UART_TX"
+      }
+    },
+    "J8": {
+      "value": "HMI:1=5V 2=GND 3=RX 4=TX",
+      "pins": {
+        "1": "+5V_HMI",
+        "2": "GND",
+        "3": "HMI_RX",
+        "4": "HMI_TX"
+      }
+    },
+    "TP32": {
+      "value": "+5V_HMI",
+      "pins": {
+        "1": "+5V_HMI"
+      }
+    },
+    "TP33": {
+      "value": "+3V3_HMI",
+      "pins": {
+        "1": "+3V3_HMI"
+      }
+    }
+  },
+  "sha256": {
+    "01_Power_Input.kicad_sch": "b62ce158cd0189f579458f2c7d427971816ffe13eff77a83385c8c28b4fe9ffd",
+    "02_Power_Rails_1.kicad_sch": "6a3647b347a155dfa52dafe6470907ce7b785b96526dc95ed75e43210c708b5f",
+    "02_Power_Rails_2.kicad_sch": "34981e86333c0ea740131c8628b035d6f3d6fd3257b9abe88a3d71db74db574f",
+    "03_Reference.kicad_sch": "fdd2c136d9e14a36709e86e9d2f4b81c88bbca26900617d721b3be80ec18b04a",
+    "04_IR_Emitter.kicad_sch": "dc613cd4791a9f24896de4b5d80b1aff0b1450125c562529e53d5ee16f9d0b20",
+    "05_IR_TIA.kicad_sch": "675957bb7fa2001fba4a8681b9f21a525a0573e167c22dd4ad203df0aa3f36b7",
+    "06_IR_Filter.kicad_sch": "94038c7e812cd66564f94d1b6081290e87651c64b2993818a59e2f6e38c8f8f5",
+    "07_IR_AntiAlias.kicad_sch": "557cbe8bb051436b442f9f140acdbe138612b57bfdcc7ce26352f00bf05a48c7",
+    "08_US_Emitter.kicad_sch": "ed059313f412d8883d2e4c25ddb93084bb6848fde5916648b39b65199fef52b4",
+    "09_US_Input_1.kicad_sch": "d36e036572d56ed68c9a2a92242b5145337b62ebcb09e87ce193990daf84f4d5",
+    "09_US_Input_2.kicad_sch": "d8a8401779cebedd91f935f57885e728b88111ae339f5098c7f9275c1a3dd3ce",
+    "10_US_GainFilter.kicad_sch": "6ead27370bd415cb15aba389306cdc998daba493ef3338bb201bf19f5f0a56e1",
+    "11_US_AntiAlias.kicad_sch": "50042fde6bf0950af361487d095019d89be85e438f8477ea0938c2d2dad3edf6",
+    "12_MCU.kicad_sch": "2a71eefa79e4c49e48a30124e8740e6f87c020256e1114238ad50aea156d0213",
+    "12_MCU_Core.kicad_sch": "7edcb7027380d2a20e8bac340914a05be536b273692cf63aac0b4ab9a8749324",
+    "13_MCU_AnalogClock_1.kicad_sch": "193dee27a064e9c344f6c2cdc46d54420ddd258947adcd0ed1931a057766d885",
+    "13_MCU_AnalogClock_2.kicad_sch": "4bd3318b99a6d50e7e34c056805c82a5423e1ea53fd25efa5ac629b3229d3a87",
+    "14_Service.kicad_sch": "bc27e14e51988353b20eff6499f9324ed494337aecc2f9cfbc44762212be002f",
+    "15_Test_1.kicad_sch": "23c487e437a2a117b288fed6ece1aae2d17190f4820b8b936799a5ba0a147076",
+    "15_Test_2.kicad_sch": "68f4acf39dafb26067d057e49dd03e178786a4aa5bedb7485ab1f9a5fa36a256",
+    "15_Test_3.kicad_sch": "adc0ed81228859c7d9a9695316191f3b36dfb9992454711154f298a9d5e8a7fd",
+    "16_Ground_Probes_1.kicad_sch": "f9cdadce20542db831dd7940d3b75094eb2bc593370d3bcf61a46ecc8f3b00dd",
+    "16_Ground_Probes_2.kicad_sch": "232c22f655db48e9674fa8d50993d82befa43d6adaf66fd1318b7006719699a8",
+    "16_Ground_Probes_3.kicad_sch": "238ba687a092fb7b3cfb659b54ef29e0c1a0d0ff879cc200a3584080beffcf9d",
+    "17_Ground_Probes_1.kicad_sch": "fa2f38acbf47f361d2a3ebd1062e8589c14b37efdd4684f3d8c895a8be39e876",
+    "18_HMI_Power.kicad_sch": "53ef90836d6c4b61bd6262f1c29c8f723d31ef040ee4d3ba5400ee949fa9f152",
+    "19_HMI_UART.kicad_sch": "61a3ac5fdf62eb426eb09c59b07f0f476750ea99d025d0ba5e8184f3ad0c5f0c",
+    "20_HMI_Connector.kicad_sch": "d060b522baf67cda5924db464dbc154668ab55a6148eac78f551e79e97c9286a",
+    "SmartSense_V1.kicad_sch": "e80f4b898772b37c9caca4591318c18a4cff59c554a068dece18a4688b6dfa46",
+    "SmartSense_V1.kicad_pcb": "8953908bcb82aa939371099dc1032d340dadc591b9a3600be3d00530039d721f"
+  },
+  "status": "Design evidence only; no physical validation or certification",
+  "tracks": 1097,
+  "vias": 88,
+  "critical_routing": {
+    "PD_SUM": {
+      "length_mm": 11.34828678275334,
+      "vias": 0
+    },
+    "V_TIA": {
+      "length_mm": 27.09870326888213,
+      "vias": 2
+    },
+    "ADC_PHOTO": {
+      "length_mm": 65.20073968376985,
+      "vias": 2
+    },
+    "ADC_US": {
+      "length_mm": 29.526273736266145,
+      "vias": 2
+    },
+    "+5V": {
+      "length_mm": 215.07338145523357,
+      "vias": 5
+    },
+    "+5V_HMI": {
+      "length_mm": 48.00287149660494,
+      "vias": 0
+    }
+  }
+}

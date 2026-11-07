@@ -1,0 +1,73 @@
+{
+  "date": "2026-11-07",
+  "physical_fit_tested": false,
+  "case_document": "Untitled",
+  "case_components": [
+    "Base_M2",
+    "Facade_IHM_M2",
+    "Trappe_service_M2",
+    "Enveloppes_composants_manquants",
+    "Afficheur_Nextion_24_enveloppe",
+    "Cables_exterieurs_illustration",
+    "Interface_DEMO_non_fonctionnelle",
+    "Presse_etoupes_M12_enveloppes_M2",
+    "PCB_reference_KiCad_V1_HMI",
+    "Connecteur_IHM_accouple_enveloppe",
+    "Boucle_faisceau_IHM_enveloppe"
+  ],
+  "case_timeline_issues": [],
+  "case_unexpected_interferences": [],
+  "case_expected_contacts": [
+    {
+      "a": "JST_B4B_XH_A/Corps1",
+      "b": "SmartSense_V1_PCB (1)/Corps1",
+      "volume_mm3": 0.05099398011984674,
+      "min_mm": [
+        27.680000000000003,
+        -81.61581254575404,
+        0.0
+      ],
+      "max_mm": [
+        35.82,
+        -81.38000000000002,
+        0.566625091508065
+      ],
+      "classification": "Previously documented formed-pin model contact within PCB holes; supplier fit still required"
+    },
+    {
+      "a": "JST_B4B_XH_A/Corps1",
+      "b": "Connecteur_IHM_accouple_enveloppe/Volume reserve XH accouple9.8mm",
+      "volume_mm3": 242.2623401201469,
+      "min_mm": [
+        25.55,
+        -85.4,
+        1.6000000000000003
+      ],
+      "max_mm": [
+        37.95,
+        -79.65,
+        8.595
+      ],
+      "classification": "Intentional connector mating envelope"
+    }
+  ],
+  "accessory_solids": [
+    {
+      "name": "Capuchon_noir_M2_RD",
+      "volume_mm3": 716.5972842838628,
+      "solid": true
+    },
+    {
+      "name": "Porte_LED_reference_M2_RD",
+      "volume_mm3": 595.2571950297687,
+      "solid": true
+    }
+  ],
+  "accessory_timeline_issues": [],
+  "passed_native_geometry": true,
+  "case_master_modified": false,
+  "limitations": [
+    "No printed fit, opacity, EMC, thermal or railway qualification",
+    "Manually installed reference; not autonomous in service"
+  ]
+}

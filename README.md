@@ -12,6 +12,6 @@ Dans **KiCad 10**, ouvrir [SmartSense_V1.kicad_pro](hardware/V1/SmartSense_V1.ki
 
 [Démarche et essais](ingenierie/PROTOTYPE.md) · [Code C et temps réel](firmware/README.md) · [Programmation](PROGRAMMATION.md)
 
-Aucun PDF. Le boîtier et le dossier de fabrication restent locaux.
+
 
 [Mon portfolio](https://www.b-diaw.com)

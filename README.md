@@ -1,17 +1,25 @@
 # SmartSense
 
-J’ai lancé ce projet personnel pour appliquer le module **Smart Capteurs & Actionneurs**. Je commence par caractériser une barrière infrarouge modulée sur banc, puis j’étudie ce qui permet de distinguer une perturbation de mesure d’une dégradation du capteur. La carte STM32G431 comprend aussi une voie ultrasonore, une mesure de température et une liaison écran.
+**Prototype R&D de capteurs industriels — en cours.**
 
-Je travaille la **représentation d’état** avec deux modèles : le filtre analogique et un observateur du signal ADC. La détection I/Q sert de référence. Le noyau C passe 22 tests et compile pour le Cortex-M4F ; il reste à intégrer les pilotes et à l’essayer sur la carte.
+SmartSense est une plateforme de laboratoire pour l'acquisition et le diagnostic de signaux **infrarouges modulés** et **ultrasonores (40 kHz)**. Elle utilise un **STM32G431**, une chaîne analogique dédiée et un **PCB 4 couches** conçu avec KiCad.
 
-La [revue R&D](ingenierie/revue_RD_20261106/DECISION_ET_REVUE.md) expose les limites de la V1 et le plan d’essais. La perspective ferroviaire motive la recherche ; cette carte reste un prototype de laboratoire. Les résultats MATLAB et Simulink sont des simulations, sans mesures de carte à ce stade.
+## État du projet
 
-## Ouvrir le projet
+| Réalisé | À faire |
+|---|---|
+| Schémas et PCB KiCad V1 (ERC/DRC : 0 violation signalée) | Fabrication et assemblage de la carte |
+| Noyau C : 22 tests réussis sur PC, compilation ARM vérifiée | Intégration firmware et essais sur STM32 |
+| Modèles et simulations MATLAB/Simulink | Mesures et validation sur banc |
 
-Dans **KiCad 10**, ouvrir [SmartSense_V1.kicad_pro](hardware/V1/SmartSense_V1.kicad_pro). Schémas, PCB routé et bibliothèques sont inclus. ERC et DRC sans violation. La carte n’est pas encore fabriquée.
+**Important :** aucun essai physique n'a encore été réalisé. Le prototype n'est pas qualifié pour une application ferroviaire ou de sécurité.
 
-[Démarche et essais](ingenierie/PROTOTYPE.md) · [Code C et temps réel](firmware/README.md) · [Programmation](PROGRAMMATION.md)
+## Fichiers principaux
 
+- [Conception KiCad V1](hardware/V1/SmartSense_V1.kicad_pro) — ouvrir avec **KiCad 10**.
+- [Études MATLAB/Simulink](etudes/README.md)
+- [Firmware C](firmware/README.md) et [programmation STM32](PROGRAMMATION.md)
+- [Prototype et prochaines étapes](ingenierie/PROTOTYPE.md)
+- [Revue R&D et limites](ingenierie/revue_RD_20261106/DECISION_ET_REVUE.md)
 
-
-[Mon portfolio](https://www.b-diaw.com)
+[Portfolio](https://b-diaw.com)

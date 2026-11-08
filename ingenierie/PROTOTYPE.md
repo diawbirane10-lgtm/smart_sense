@@ -1,36 +1,31 @@
-> Mise à jour du 6 novembre 2026 : la [revue R&D](revue_RD_20261106/DECISION_ET_REVUE.md) fixe le nouveau périmètre et les essais bloquants. Les performances physiques restent à mesurer.
+# SmartSense — prototype de laboratoire
 
-# Prototype de laboratoire : périmètre et preuves
+## Périmètre
 
-L’objectif principal est une **barrière infrarouge modulée caractérisable sur banc**. L’ultrason fournit une seconde chaîne d’émission/réception à étudier ; aucune précision de distance n’est annoncée. La thermistance sert d’abord à relever la température. L’écran est un affichage secondaire, le PC conserve les mesures et les états de validité.
+- **Infrarouge :** barrière modulée, émetteur externe et photodiode ; premier essai prévu à **100 mm** en intérieur.
+- **Ultrason :** émission/réception à **40 kHz**, sans précision de distance revendiquée.
+- **Température :** acquisition par thermistance.
+- **Traitement :** STM32G431, détection I/Q et observateur de signal ; affichage secondaire et captures sur PC.
 
-Le premier montage visé place l’émetteur externe dans l’axe de l’ouverture IR du couvercle, à 100 mm, sur un support de laboratoire stable. Les tests seront réalisés en intérieur propre. Cette distance est un objectif d’essai, pas une portée déjà démontrée. Les faisceaux sont à fournir terminés, sans soudure utilisateur.
+Schémas, PCB routé, modèles et noyau C sont disponibles. **La carte n'est pas fabriquée ; aucun essai physique n'est terminé.**
 
-Le PCB V1-HMI et le boîtier M2 restent inchangés pendant cette passe. La priorité est de vérifier la chaîne déjà conçue avant d’ajouter des fonctions. Les sources CAO, les modèles et le code C sont présents ; le firmware complet, la carte assemblée et les mesures de banc manquent encore.
+## Points de vigilance
 
-## Pourquoi ces choix
+| Sujet | Vérification indispensable |
+|---|---|
+| Saturation optique du TIA | Mesurer **TP10**, même si l'ADC semble valide |
+| Signal faible (obstacle ou panne) | Ne pas attribuer de cause sans référence indépendante |
+| ADC/DMA et temps réel | Vérifier horodatage, pertes de blocs, invalidation |
+| Couplage IR/US/écran | Comparer bruit et alimentation avec chaque fonction active |
+| PCB et mécanique | Contrôler alimentation, empreintes, câbles et montage réel |
 
-La détection synchrone est une méthode d’instrumentation documentée par Stanford Research Systems. Analog Devices décrit la modulation et la détection synchrone pour limiter les perturbations lumineuses en photodétection. Cela motive le traitement I/Q de l’IR, sans promettre de supprimer une saturation analogique.
+Les vérifications ERC/DRC ne remplacent pas les essais électriques, CEM et mécaniques.
 
-Le découpage exigences → conception → prototype → vérification suit les démarches présentées par NI. Les [exigences et états de validation](EXIGENCES.csv) séparent les preuves logicielles des essais physiques. Il s’agit d’une adaptation à un projet étudiant, sans revendication de certification.
+## Suite
 
-## Risques à suivre
+1. Assembler et alimenter la carte sous contrôle.
+2. Intégrer le firmware STM32.
+3. Exécuter le [protocole de banc](PROTOCOLE_BANC.md) et enregistrer les résultats.
+4. Mettre à jour [les exigences](EXIGENCES.csv) et [la revue R&D](revue_RD_20261106/DECISION_ET_REVUE.md).
 
-| Risque | Conséquence | Contrôle prévu |
-|---|---|---|
-| Lumière ambiante saturant le TIA | L’AC peut devenir faible malgré un ADC non saturé | Examiner TP10 ; qualifier les éclairages admis. Une surveillance DC automatique demanderait une évolution matérielle. |
-| Câble/émetteur IR coupé | Signal faible similaire à une occultation | Nommer l’état SIGNAL_FAIBLE ; ne pas en déduire la cause sans diagnostic supplémentaire. |
-| Bloc DMA perdu, périmé ou écrasé | Résultat trompeur | Identifiant, horodatage, propriété des buffers, échéance et invalidation. Vérifier le pilote sur cible. |
-| Écran et émissions perturbant l’analogique | Bruit ou chute d’alimentation | Caractériser d’abord IR seul, puis activer écran et ultrason séparément et comparer les captures. |
-| Saturation, reset ou démarrage incomplet | Valeur ancienne affichée | État initial non étalonné, validité verrouillée, âge transmis, watchdog matériel à intégrer. |
-| Pièces réelles et impression différentes des modèles | Montage ou accès impossible | Premier assemblage à blanc, contrôle des connecteurs accouplés et des câbles avant fermeture. |
-
-Les contrôles ERC/DRC et les 370 connexions comparées restent sans erreur. Ils ne valident pas la CEM, la portée, la thermique ou l’innocuité d’un dispositif de sécurité. Les transducteurs Murata ouverts retenus imposent notamment un usage intérieur adapté.
-
-## Présenter le travail au professeur
-
-Montrer la chaîne IR sur le schéma, expliquer le choix de la modulation, puis comparer le traitement I/Q à l’observateur. Présenter les tests C et la compilation ARM comme des preuves logicielles. Les graphiques synthétiques portent cette mention et ne doivent pas être présentés comme des essais de la carte.
-
-Après fabrication, ajouter au dossier une photo du banc, le matériel utilisé, les réglages, les captures brutes et les résultats du [protocole de banc](PROTOCOLE_BANC.md). Une limite constatée et expliquée est un résultat de R&D ; elle ne doit pas être remplacée par une performance supposée.
-
-Références et liens : [SOURCES.md](SOURCES.md).
+**Usage :** prototype de laboratoire, sans qualification ferroviaire ni fonction de sécurité. [Références](SOURCES.md).

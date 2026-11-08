@@ -1,9 +1,9 @@
-# Reproduire la revue
+# Reproduire les vérifications R&D
 
-1. Avec Python fourni par KiCad 10, exécuter verifier_kicad.py --project <chemin du fichier .kicad_pro>. Cette vérification lit la conception et régénère les rapports ERC/DRC ainsi que AUDIT_NATIF.json. Les contrôles ignorés restent visibles dans les rapports.
-2. Dans MATLAB, ajouter le dossier etudes au chemin puis exécuter revue_rd et verifier_simulink_rd. La graine61106 rend les simulations reproductibles. Les modèles utilisent les valeurs exportées par KiCad ; les équations idéales sont documentées dans revue_rd.m. Le modèle Simulink compare une autre implémentation des mêmes équations, pas le matériel.
-3. Exécuter les tests firmware selon firmware/README.md ; conserver compilateur, résultats et version des sources. Les objets ARM ne sont pas une image programmable complète.
-4. Pour la mécanique locale, ouvrir le maître M2 dans Fusion et les accessoires F3D séparément. Le script local FusionScript/SmartSenseRD peut être lancé dans Scripts et compléments : il importe l’archive M2 exacte, contrôle les interférences et recrée les accessoires. Aucun compte rendu ne doit être marqué PASS après une erreur.
-5. Après modification d’un composant, d’une connexion ou d’une empreinte : nouvelle sauvegarde, nouvelles valeurs exportées, nouveaux contrôles et mise à jour des limites. Le manifeste SHA256 relie les fichiers de cette livraison.
+1. **KiCad 10 :** exécuter `verifier_kicad.py --project CHEMIN/SmartSense_V1.kicad_pro` avec le Python de KiCad. Consulter les rapports ERC/DRC et `AUDIT_NATIF.json`, y compris les exclusions configurées.
+2. **MATLAB :** ajouter `etudes/` au chemin, exécuter `revue_rd` puis `verifier_simulink_rd`. Graine de simulation : **61106**. Les résultats portent sur des modèles, pas sur le matériel.
+3. **Firmware :** lancer les tests indiqués dans [firmware/README.md](../../../firmware/README.md) et noter la version du compilateur.
+4. **Mécanique :** ouvrir les fichiers Fusion du projet ; contrôler les interférences et l'ajustement réel avant assemblage.
+5. **Après toute modification :** refaire les vérifications concernées et conserver les nouveaux rapports.
 
-Les essais physiques de TESTS.csv ne sont pas exécutables sans carte, instrumentation et protocole de banc. Ils restent A_FAIRE. Aucun résultat de conformité CEM ou ferroviaire n’est fourni.
+Les essais physiques répertoriés dans `TESTS.csv` restent **à faire**. Le manifeste `MANIFESTE_SHA256.json` relie les éléments archivés.

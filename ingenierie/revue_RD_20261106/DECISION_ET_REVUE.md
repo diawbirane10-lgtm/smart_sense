@@ -41,4 +41,4 @@ Modèles de petits signaux : **45,27 kV/A** pour l'IR à 10 kHz et **14,08** de 
 
 **Aucune commande de fabrication ni utilisation de sécurité n'est approuvée par cette revue.** Les normes ferroviaires, performances et éventuelle publication exigent de nouvelles preuves.
 
-[Protocole d'essais](../PROTOCOLE_BANC.md) · [Reproduire la revue](REPRODUIRE.md) · [Sources](SOURCES.md) · [Résultats et preuves](./)
+[Protocole d'essais](../PROTOCOLE_BANC.md) · [Reproduire la revue](REPRODUIRE.md) · [Sources](SOURCES.md) · [Audit natif](AUDIT_NATIF.json)

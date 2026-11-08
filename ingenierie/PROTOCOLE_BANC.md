@@ -1,13 +1,17 @@
-# Première campagne d’essais
+# SmartSense — essais de laboratoire prévus
 
-**Aucun de ces essais physiques n’a encore été exécuté.** Consigner pour chaque essai : carte/révision, version du firmware, date, instruments, réglages, fichiers bruts, résultat et anomalie. Toute modification de gain, d’optique ou de cadence impose de reprendre les essais concernés.
+**Statut : à réaliser.** Enregistrer pour chaque essai : révision carte, firmware, instruments, réglages, données brutes et observations. En cas de modification matérielle, reprendre les essais concernés.
 
-1. **Alimentation.** Écran débranché, utiliser une alimentation de laboratoire 24 V limitée en courant. Commencer avec 100 mA ; si la limitation persiste, arrêter et rechercher la cause avant augmentation. Vérifier TP6 (+5 V), TP7 (+3V3_A), TP8 (+3V3_D), TP9 (référence 1,65 V). Relever les courants et températures. Refaire à 18 et 30 V, puis avec l’écran ; viser 4,75–5,25 V à J8, y compris démarrage et pleine luminosité. Contrôler aussi la fiche de l’écran réellement acheté.
-2. **Programmation et temps réel.** Programmer et relire la Flash par J6. Vérifier à l’oscilloscope l’émission IR à 10 kHz et la cadence ADC. Mesurer le temps de traitement sur cible avec un compteur de cycles ou une broche de test disponible. Viser moins de 1 ms par bloc de 2 ms. Provoquer perte de bloc, arrêt DMA et retard de calcul : aucune valeur ne doit rester présentée comme valide. Contrôler le watchdog matériel et les sorties au reset.
-3. **Chaîne IR.** Aligner l’émetteur externe face à l’ouverture du récepteur, à 100 mm. Garder l’ultrason désactivé. Examiner TP10 (V_TIA) et TP11 (ADC_PHOTO), faisceau libre puis occulté. Rechercher une saturation à TP10 même si TP11 paraît centré. Comparer les amplitudes et le bruit sous deux éclairages de laboratoire identifiés ; noter leur type et, si disponible, l’éclairement. Le lux seul ne décrit pas le contenu infrarouge.
-4. **Étalonnage et détection.** Acquérir au moins 200 blocs libres et 200 occultés après stabilisation. Déterminer amplitudes et écart-type de répétabilité ; refuser une séparation inférieure à `max(20 mV, 6σ)` selon la règle choisie. Réaliser 200 interruptions avec une cible opaque et mesurer les latences. Objectif de prototype : aucune erreur observée dans ces conditions, chaque transition en moins de 100 ms. Ce résultat éventuel ne serait pas une garantie de fiabilité en exploitation.
-5. **Couplages.** Reprendre les captures avec l’écran, puis avec l’ultrason actif. Conserver les signaux bruts et comparer bruit, amplitude et alimentation ; expliquer toute dégradation avant de changer les seuils.
-6. **Ultrason et température.** Tester séparément l’émission 40 kHz et la réception avec une géométrie fixe ; consigner le signal, le bruit, le couplage direct et la résonance. Aucun calcul de distance sans qualification de la géométrie et de la détection d’écho. Comparer la NTC à un thermomètre de référence à plusieurs températures stabilisées, objectif initial ±2 °C sur 20–40 °C.
-7. **Mécanique.** Monter les trois pièces imprimées, la carte, l’écran et les connecteurs réellement accouplés. Vérifier accès SWD/service, alignement optique, fermeture sans pincement et maintien des câbles. Ne pas déduire un indice IP de cet essai.
+| Étape | Vérifications |
+|---|---|
+| 1. Alimentation | Démarrer à 24 V avec limitation de courant et écran débranché ; relever +5 V (TP6), +3V3_A (TP7), +3V3_D (TP8), 1,65 V (TP9). Comparer ensuite à 18 V et 30 V. Arrêter en cas de surintensité. |
+| 2. STM32 | Programmer par J6, contrôler IR 10 kHz, cadence ADC, DMA, reset, watchdog et calcul **< 1 ms** par bloc de 2 ms. |
+| 3. IR | Émetteur aligné à **100 mm**, ultrason désactivé ; mesurer **TP10** (TIA) et **TP11** (ADC) libre/occulté, selon plusieurs éclairages. Rechercher toute saturation analogique. |
+| 4. Détection | Enregistrer au moins **200 blocs libres et 200 occultés**, puis 200 transitions. Mesurer séparation, bruit, fausses décisions et latence ; objectif de conception inférieur à 100 ms. |
+| 5. Interférences | Répéter les mesures IR avec écran puis ultrasons actifs ; comparer bruit, amplitude et alimentation. |
+| 6. Ultrasons / NTC | Caractériser le 40 kHz sans présumer une précision de distance ; comparer la température à une référence (cible initiale ±2 °C de 20 à 40 °C). |
+| 7. Mécanique | Vérifier alignement, connecteurs, câbles, accessibilité SWD et fermeture sans pincement. |
 
-Les résultats doivent mettre à jour `EXIGENCES.csv`, en conservant la distinction entre simulation, contrôle logiciel et mesure physique. En cas de défaut analogique, corriger et reprendre la campagne avant toute démonstration de performance.
+Ces objectifs ne sont **pas des performances démontrées** ni des essais de conformité. Les transducteurs ouverts retenus ne sont pas destinés à l'extérieur.
+
+Mettre à jour [EXIGENCES.csv](EXIGENCES.csv) et les preuves uniquement après exécution et sauvegarde des mesures.
